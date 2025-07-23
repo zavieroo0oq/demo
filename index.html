@@ -1,1134 +1,2173 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="zh-cn">
 
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="robots" content="all">
-    <meta name="author" content="Tencent-CP"/>
-    <meta name="Copyright" content="Tencent"/>
-    <meta name="Description"
-          content="《天涯明月刀》古龙正版授权，端游核心团队打造的国风大世界MMORPG手游。行业领先的美术技术，数十个可攻略NPC，更可逆天改命，体验指尖上的平行宇宙！你心动的每一刻，就是天涯。"/>
-    <meta name="Keywords"
-          content="天涯明月刀手游，天刀手游，腾讯,腾讯游戏,天涯明月刀,天刀,手游,天刀手游,天涯明月刀ol,腾讯手游,国风手游,捏脸,武侠,武侠游戏,开放世界,古龙,古龙改编,古龙游戏,游戏下载"/>
-    <!-- 设计：cp  | 重构：cp | 创建：2025/04/14 | 更新：| 团队博客：http://tgideas.qq.com/ -->
-    <title>江湖归处是桃源</title>
-    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <script>
-        //屏幕适应
-        (function (win, doc) {
-            if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
-                handleFontSize();
-            } else {
-                if (document.addEventListener) {
-                    document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
-                } else if (document.attachEvent) {
-                    document.attachEvent("WeixinJSBridgeReady", handleFontSize);
-                    document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
-                }
+   <meta charset="UTF-8">
+   <meta name="Copyright" content="Tencent" />
+   <meta name="applicable-device" content="mobile">
+   <meta name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+   <meta name="format-detection" content="telephone=no" />
+   <meta content="yes" name="mobile-web-app-capable">
+   <meta content="yes" name="apple-mobile-web-app-capable" />
+   <meta name="robots" content="all" />
+   <meta name="author" content="Aurora-Web" />
+   <meta itemprop="name" content="天衣阁织梦师B站&微博创作征集计划" />
+   <meta name="Description"
+      content="《天涯明月刀》古龙正版授权，端游核心团队打造的国风大世界MMORPG手游。行业领先的美术技术，数十个可攻略NPC，更可逆天改命，体验指尖上的平行宇宙！你心动的每一刻，就是天涯。" />
+   <meta name="Keywords"
+      content="天涯明月刀手游，天刀手游，腾讯,腾讯游戏,天涯明月刀,天刀,手游,天刀手游,天涯明月刀ol,腾讯手游,国风手游,捏脸,武侠,武侠游戏,开放世界,古龙,古龙改编,古龙游戏,游戏下载" />
+   <title>天衣阁织梦师B站&微博创作征集计划</title>
+   <link rel="stylesheet" href="https://game.gtimg.cn/images/wuxia/cp/a20250530czz/HYJinKaiJ/result.css">
+   <link rel="preload" href="https://game.gtimg.cn/images/ty/act/a20240930tysj/fzbwksjw/result.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+   <link rel="preload" href="https://game.gtimg.cn/images/ty/font/FZLanTingHei/result.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+   <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
+   <script>
+      (function (win, doc) {
+         if (!win.addEventListener) return;
+         var html = document.documentElement;
+
+         function setFont() {
+            var cliWidth = html.clientWidth;
+            if (cliWidth > 800) {
+               cliWidth = 800;
             }
-
-            function handleFontSize() {
-                // 设置网页字体为默认大小
-                WeixinJSBridge.invoke('setFontSizeCallback', {'fontSize': 0});
-                // 重写设置网页字体大小的事件
-                WeixinJSBridge.on('menu:setfont', function () {
-                    WeixinJSBridge.invoke('setFontSizeCallback', {'fontSize': 0});
-                });
-            }
-
-            if (!win.addEventListener) return;
-            var html = document.documentElement;
-
-            function setFont() {
-                var html = document.documentElement;
-                var k = 750;
-                html.style.fontSize = html.clientWidth / k * 100 + "px";
-            }
-
+            html.style.fontSize = 100 * (cliWidth / 750) + "px";
+         }
+         setFont();
+         setTimeout(function () {
             setFont();
-            setTimeout(function () {
-                setFont();
-            }, 300);
-            doc.addEventListener('DOMContentLoaded', setFont, false);
-            win.addEventListener('resize', setFont, false);
-            win.addEventListener('load', setFont, false);
-        })(window, document);
-    </script>
+         }, 300);
+         doc.addEventListener("DOMContentLoaded", setFont, false);
+         win.addEventListener("resize", setFont, false);
+         win.addEventListener("load", setFont, false);
+      })(window, document);
+   </script>
+   <link href="/act/a20250714czz/index.css" rel="stylesheet">
 </head>
 
 <body>
-<!-- 内容  -->
-<div class="wrap">
-    <h1 class="hide">江湖归处是桃源</h1>
-    <!-- 通用tab、登录及标题 -->
-    <div class="hd_info">
-        <div class="login_box login">
-            <!-- 登录前 -->
-            <div id="unlogin" class="login_before">
-                你好，请登录 
-                <a id="qqLogin" href="javascript:qqLogin();">【QQ登录】</a> 
-                <a id="wxLogin" href="javascript:wxLogin();">【微信登录】</a>
+   <div id="app" class="wrap">
+      <div class="wrap-cont">
+         <div class="kv-box">
+            <h1 class="logo"><a href="https://ty.qq.com">天涯明月刀手游</a></h1>
+            <div class="slogan-box">
+               <p class="sub-tit">天衣阁织梦师B站&微博创作征集计划</p>
+               <div class="act-info">邂逅群侠创作投稿，月灵石、Q币和限定外显等你来！</div>
             </div>
-            <!-- 登录后 -->
-            <!-- <div class="login_after" style="display: none;">
-                欢迎您，玩家昵称 <a href="javascript:TGDialogS('pop_bind');">【绑定角色】</a> <a href="javascript:;">【注销】</a>
-            </div> -->
-            <div id="logined" style="display: none;">
-                <span>欢迎您，</span>
-                <span id="userinfo">--</span>
-                <a id="bindBtn" href="javascript:TGDialogS('pop_bind');">【绑定角色】</a>
-                <a id="logoutBtn" href="javascript:loginOut();" style="cursor: pointer;">【注销】</a>
+            <div id="unlogin" class="login-box">你好，请登录
+               <a id="qqLogin" href="javascript:qqLogin();">【QQ登录】</a>
+               <a id="wxLogin" href="javascript:wxLogin();">【微信登录】</a>
             </div>
-        </div>
-        <div class="tit_box"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/tit.png" alt=""/></div>
-        <div class="tab_list">
-            <a href="javascript:showTab(0);" class="sp">活动详情</a>
-            <a href="javascript:showTab(1);" class="sp btn_tz0">我要投稿</a>
-            <a href="javascript:showTab(2);" class="sp btn_tz1" style="display:none;">活动公示</a>
-            <a href="javascript:showTab(3);" class="sp">奖励中心</a>
-            <a href="javascript:showTab(4);" class="sp">我要投票</a>
-        </div>
-    </div>
-    <!-- 内容 -->
-    <div class="content">
-        <!-- 活动详情 -->
-        <div class="con con1">
-            <div class="xq_box1"></div>
-            <!-- 活动玩法 -->
-            <div class="xq_box2">
-                <p class="xq_txt">
-                    报告少侠萝，是时候前往桃源种田了！<br/>
-                    天衣阁织梦师特别计划——<span>微博创作专区</span>登场，快跟随刀妹和<br/>萝萝的脚步，来微博<span>天涯明月刀手游超话</span>带<span>#天刀手游新赛季启明#</span>+<span>#江湖归处是桃源#</span>+<span>#桃源天刀联动#</span>三大活动话题，<br/>分享你的<span>染色穿搭、塑形</span>和<span>江湖美照录屏</span>等原创作品，<br/>让<span>桃源“田园风”</span>穿搭席卷江湖！<br/>
-                    成功参与活动投稿不仅<span>必得“织心裁意”限定头像框和<br/>头顶图标</span>，还能赢取刀妹准备的海量<br/>月灵石和万元Q币豪礼哦！
-                </p>
+         </div>
+         <div id="logined" style="display: none;">
+            <span>欢迎您，</span>
+            <span id="userinfo">--</span>
+            <a id="bindBtn" href="javascript:dialogHandler.show('bindRole');">【绑定角色】</a>
+            <a id="logoutBtn" href="javascript:loginOut();" style="cursor: pointer;">【注销】</a>
+         </div>
+         <div class="area-1 area-wrap">
+            <div class="main-cont-tit">
+               <p><span>微博创作者投稿专区</span></p>
             </div>
-            <!-- 活动时间 -->
-            <div class="xq_box3"></div>
-            <!-- 活动奖励 -->
-            <div class="xq_box4">
-                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg4.jpg" alt=""/>
-                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg5.jpg" alt=""/>
-                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg6.jpg" alt=""/>
-                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg7.jpg" alt=""/>
-            </div>
-            <!-- 活动规则 -->
-            <div class="xq_box5">
-                <ul class="rule_list">
-                    <li><em>1.</em>本次活动的参赛作品需在2025年4月25日10:00:00-2025年5月18日23:59:59【投稿期】内，按照指定格式成功发布天涯明月刀手游赛季版相关内容即视为成功参与，单个作品仅可在多平台参与一次活动；
-                    </li>
-                    <li><em>2.</em>本次活动的参赛作品须按照相关活动规则读取至活动页面内，不符合活动投稿范圈和主题要求的作品将不计入评选范围；
-                    </li>
-                    <li><em>3.</em>本次活动的参赛作品均需要经审核后方可视为成功投稿，预计在48小时左右完成，请少侠耐心等待；
-                    </li>
-                    <li><em>4.</em>本次活动的参赛作品需内容积极健康，禁止发布一切涉及色情血腥、暴力以及违反国家法律法规、带有任何扭曲历史，丑化贬低中华民族精神及人性的内容，一经发现将取消参赛资格；
-                    </li>
-                    <li><em>5.</em>本次活动的参赛选手对参赛作品的版权、著作权以及肖像权负法律责任，不得盗用、剽窃和抄袭他人作品；
-                    </li>
-                    <li><em>6.</em>如发现他人的作品内容涉嫌抄袭或盗用，可前往官方账号进行举报申诉，参赛者因剽窃他人作品而产生法律纠纷，将由参赛者承担法律责任，与主办以及承办单位无关；
-                    </li>
-                    <li><em>7.</em>本次活动的所有获奖作品将默认《天涯明月刀》手游官方有使用其作品的权利，包括但不限于宣传活动作品等非商业和商业使用途径，作品
-                        经由官方平台宣传并非视为获奖，奖励评选将以最终获奖名单为准。同时未经主办方同意，作者不得将参赛作品自行用于商业用途或授权于任何第三方使用，否则将取消评奖资格；
-                    </li>
-                    <li><em>8.</em>本次活动的参赛者不得出现数据造假、恶意刷票等情况，一经官方核实，将取消参赛资格；</li>
-                    <li><em>9.</em>如参赛者因个人原因未能在规定时间15天内在活动页面(2025年6月15日23:59:59前)领取奖品或填写相关获奖信息，则视为主动放弃奖励。<a
-                            href="rule.html" class="link_rule sp db">详细规则</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- 我要投稿 -->
-        <div class="con con2">
-            <div class="tg_box1"></div>
-            <!-- 如何投稿 -->
-            <div class="tg_box2">
-                <!-- 添加gray为灰态 -->
-                <a href="javascript:;" class="btn_sq sp btn_djsq">点击授权个人微博主页</a>
-                <div class="big_btn">
-                    <a href="javascript:;" class="sp btn_red fcbtn_t1">点我投稿</a>
-                    <a href="javascript:;" class="sp btns_green btn_tz3">我的作品</a>
-                </div>
-            </div>
-            <!-- 稿件要求 -->
-            <div class="tg_box3">
-                <p class="gjyq_txt gjyq_txt1">
-                    ·如少侠想投稿<span>未同步至少侠所绑定的个人微博主页的创作内容</span>，少侠点击【点我投稿】时，需要少侠<span>复制超话作品链接</span>，并在【微博创作专区】活动页面内按照指引，<span>粘贴链接进行投稿</span>。
-                </p>
-                <p class="gjyq_txt gjyq_txt2">
-                    ·如少侠想投稿<span>已同步至微博主页的作品</span>，少侠成功绑定个人微博主页后，可先在微博天涯明月刀手游超话带三大活动话题自主投稿，后<span>点击【点我投稿】按钮自动读取所需作品（投稿页面仅读取最新5条作品）</span>并选择投稿，<span>如页面中未显示所需作品，少侠可通过【链接投稿】提交作品链接的方式进行投稿</span>。
-                </p>
-                <p class="gjyq_txt gjyq_txt3">
-                    ·少侠需要在【投稿期】内带<span>#天刀手游新赛季启明#+#江湖归处是桃源#+#桃源天刀联动#</span>三大活动话题投稿上传天刀手游相关原创<span>图文作品</span>或<span>视频作品</span>，<span>纯文字作品将会直接判定为不合格</span>；<br/>
-                    ·为确保活动排名公平公正，<span>活动期间以及活动结束后少侠请勿擅自去除投稿作品的活动话题或删除作品</span>。
-                </p>
-            </div>
-            <!-- 作品参考 -->
-            <div class="tg_box4">
-                <!-- 图文作品 -->
-                <div class="tg_lb tg_lb1">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb1.png"
-                                                           alt=""/></div>
-                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb2.png"
-                                                           alt=""/></div>
-                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb3.png"
-                                                           alt=""/></div>
-                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb4.png"
-                                                           alt=""/></div>
-                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb5.png"
-                                                           alt=""/></div>
-                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb6.png"
-                                                           alt=""/></div>
+            <div class="tab-box">
+               <div class="tab-hd" id="tabHd">
+                  <a href="javascript:;" data-index="0">活动详情</a>
+                  <a href="javascript:;" data-index="1">我要投稿</a>
+                  <a href="javascript:;" data-index="3">奖励中心 </a>
+                  <a href="javascript:;" data-index="4">我要投票</a>
+               </div>
+               <div class="tab-bd" id="tabBd">
+                  <div class="tab-bd-cont">
+                     <div class="s-tit"><span>壹</span> 活动玩法</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <p>成为刀刀“绝代侠客”的秘诀是？坐等少侠来传授！</p>
+                              <p>欢迎少侠来到天衣阁织梦师特别计划第二弹——微博创作专区：来微博天涯明月刀手游超话带#天刀手游新赛季侠至#和#绝代侠客在天涯#两大活动话题，分享你的染色穿搭、塑形和燃向剪辑MV等原创作品，一起穿上“侠客风”劲装结识古龙群侠，潇洒闯天涯叭！成功参与活动投稿不仅必得“织心裁意”限定头像框和头顶图标，还能赢取刀妹准备的海量月灵石、万元Q币奖池和同人之星限定外显等豪礼哦！
+                              </p>
+                              <div class="sub-area-title">参与指引</div>
+                              <div class="enter-act-step-box">
+                                 <div class="enter-act-step-item">
+                                    <span>第一步</span>
+                                    <div class="enter-act-step-img enter-act-step-img-1"></div>
+                                    <p>登录并绑定角色账号</p>
+                                 </div>
+                                 <div class="enter-act-step-item">
+                                    <span>第二步</span>
+                                    <div class="enter-act-step-img enter-act-step-img-2"></div>
+                                    <p>授权微博主页后点击投稿</p>
+                                 </div>
+                                 <div class="enter-act-step-item">
+                                    <span>第三步</span>
+                                    <div class="enter-act-step-img enter-act-step-img-3"></div>
+                                    <p>授权微博主页后点击投稿</p>
+                                 </div>
+                                 <div class="enter-act-step-item">
+                                    <span>第四步</span>
+                                    <div class="enter-act-step-img enter-act-step-img-4"></div>
+                                    <p>达成任务目标领取丰富奖励</p>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="pagination"></div>
-                    <div class="prev sp"></div>
-                    <div class="next sp"></div>
-                </div>
-                <!-- 视频作品 -->
-                <div class="tg_lb tg_lb2">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><a href="javascript:popVideo('x3083xnk6u5');"><img
-                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid1.png" alt=""/><em
-                                    class="btn_play sp"></em></a></div>
-                            <div class="swiper-slide"><a href="javascript:popVideo('b3217pqpdiu');"><img
-                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid2.png" alt=""/><em
-                                    class="btn_play sp"></em></a></div>
-                            <div class="swiper-slide"><a href="javascript:popVideo('t3087r70wah');"><img
-                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid3.png" alt=""/><em
-                                    class="btn_play sp"></em></a></div>
-                            <!--<div class="swiper-slide"><a href="javascript:;"><img
-                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid4.png" alt=""/><em
-                                    class="btn_play sp"></em></a></div>-->
-                            <div class="swiper-slide"><a href="javascript:popVideo('p35447qhvpb');"><img
-                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid5.png" alt=""/><em
-                                    class="btn_play sp"></em></a></div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="s-tit"><span>贰</span> 活动时间</div>
+                     <div class="area-box-wrap area-box-wrap-odd">
+                        <div class="area-box-cont">
+                           <div class="act-time-detail">
+                              <div class="act-time-item">
+                                 <div class="act-time-item-ico">投稿期</div>
+                                 <p>2025年8月08日<br>-<br>2025年8月31日<br>（24天，9月01-03日为<br>稿件审核期）</p>
+                              </div>
+                              <div class="act-time-item">
+                                 <div class="act-time-item-ico">投票期</div>
+                                 <p>2025年9月03日<br>-<br>2025年9月14日<br>（11天）</p>
+                              </div>
+                              <div class="act-time-item">
+                                 <div class="act-time-item-ico">公示期</div>
+                                 <p>2025年9月16日<br>-<br>2025年9月21日<br>（6天）</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="pagination"></div>
-                    <div class="prev sp"></div>
-                    <div class="next sp"></div>
-                </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="s-tit"><span>叁</span> 活动奖励</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="sub-area-title">投稿必得</div>
+                              <p>在【投稿期】期间参与【微博创作者投稿】专区活动投稿且过审稿件≥1条即可领取限定头像框&头顶图标“织心裁意”（30天）*1！</p>
+                              <div class="award-list-box">
+                                 <div class="award-item">
+                                    <span class="ico-1"></span>
+                                    <p>限定头像框“织心裁意”<br>（30天）*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-2"></span>
+                                    <p>限定头顶图标“织心裁意”<br>（30天）*1</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="area-box-wrap area-box-wrap-odd">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="sub-area-title">群侠人气奖</div>
+                              <p>少侠成功投稿且通过的审核的作品，可在【投票期】期间可根据【喜爱值】前往【奖励中心】领取下方对应奖励（奖励领取后将发放至少侠所绑定的角色账号邮箱内，请注意查收）。</p>
+                              <div class="award-step-tit">人气档位-S档</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：单条作品累计【喜爱值】达到500</p>
+                              <div class="award-list-box mb-30">
+                                 <div class="award-item">
+                                    <span class="ico-3"></span>
+                                    <p>天衣礼券*20</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-4"></span>
+                                    <p>随心染匣*10</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">人气档位-A档</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：单条作品累计【喜爱值】达到100</p>
+                              <div class="award-list-box mb-30">
+                                 <div class="award-item">
+                                    <span class="ico-3"></span>
+                                    <p>天衣礼券*10</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-4"></span>
+                                    <p>随心染匣*5</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="area-box-wrap mb-90">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="award-step-tit">人气档位-B档</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：单条作品累计【喜爱值】达到30</p>
+                              <div class="award-list-box mb-30">
+                                 <div class="award-item">
+                                    <span class="ico-3"></span>
+                                    <p>天衣礼券*5</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">人气档位-C档</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：单条作品累计【喜爱值】达到5</p>
+                              <div class="award-list-box mb-30">
+                                 <div class="award-item">
+                                    <span class="ico-5"></span>
+                                    <p>限定聊天气泡“织心裁意”<br>（30天）*1</p>
+                                 </div>
+                              </div>
+                              <p>请注意：少侠单条作品仅能领取1次单个档位的奖励，且每位少侠在每个档位中至多可领取3次奖励，领取奖励后将通过游戏内邮件发放。（活动结算期间，由于网络数据更新情况出现一定数据延迟现象，请少侠谅解）
+                              </p>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="area-box-wrap area-box-wrap-odd mb-90">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="sub-area-title">名气排行奖</div>
+                              <p>根据少侠成功投稿的单条作品在【公示期】9月16日0点0分进行最终【喜爱值】排行（取排名高值），活动系统结算完成后将进行作品公示，少侠可前往【作品公示】页面领取对应奖励(Q币奖励将在公示期结束后收集信息发放)。
+                              </p>
+                              <div class="award-step-tit">Top1-3名</div>
+                              <p class="font-20 ac-tc mb-20">领取条件：名气排行【喜爱值】公示排名第1-3名</p>
+                              <div class="award-list-box award-list-box-s mb-40">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*1666</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-7"></span>
+                                    <p>限定头顶图标<br>“同人之星”*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*288</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">Top4-10名</div>
+                              <p class="font-20 ac-tc mb-20">领取条件：名气排行【喜爱值】公示排名第4-10名</p>
+                              <div class="award-list-box award-list-box-s">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*888</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-7"></span>
+                                    <p>限定头顶图标<br>“同人之星”*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*166</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="award-step-tit">Top11-20名</div>
+                              <p class="font-20 ac-tc mb-20">领取条件：名气排行【喜爱值】公示排名第11-20名</p>
+                              <div class="award-list-box award-list-box-s award-list-box-s-2">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*520</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*100</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">Top21-30名</div>
+                              <p class="font-20 ac-tc mb-20">领取条件：名气排行【喜爱值】公示排名第21-30名</p>
+                              <div class="award-list-box award-list-box-s award-list-box-s-2">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*388</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*66</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="area-box-wrap area-box-wrap-odd">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="sub-area-title">绝代侠客奖</div>
+                              <p>活动结束后，刀妹将根据所过审作品的内容质量、热度和创意等维度进行综合评价后进行公示，【公示期】结束后少侠可前往【作品公示】页面领取对应奖励。</p>
+                              <div class="award-step-tit">Top1名</div>
+                              <p class="font-18 ac-tc">领取条件：【绝代侠客】公示排名第1名</p>
+                              <div class="award-list-box award-list-box-t">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*5000</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-7"></span>
+                                    <p>限定头顶图标<br>“同人之星”*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-9"></span>
+                                    <p>限定头像框<br>“同人之星·金”<br>(90天)*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*666</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">Top2-3名</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：【绝代侠客】公示排名第2-3名</p>
+                              <div class="award-list-box award-list-box-t">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*3000</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-7"></span>
+                                    <p>限定头顶图标<br>“同人之星”*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-9"></span>
+                                    <p>限定头像框<br>“同人之星·金”<br>(90天)*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*520</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">Top4-10名</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：【绝代侠客】公示排名第4-10名</p>
+                              <div class="award-list-box award-list-box-t">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*1888</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-7"></span>
+                                    <p>限定头顶图标<br>“同人之星”*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-9"></span>
+                                    <p>限定头像框<br>“同人之星·金”<br>(90天)*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*288</p>
+                                 </div>
+                              </div>
+                              <div class="award-step-tit">Top11-20名</div>
+                              <p class="font-20 ac-tc mb-10">领取条件：【绝代侠客】公示排名第11-20名</p>
+                              <div class="award-list-box award-list-box-t">
+                                 <div class="award-item">
+                                    <span class="ico-6"></span>
+                                    <p>月灵石*888</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-7"></span>
+                                    <p>限定头顶图标<br>“同人之星”*1</p>
+                                 </div>
+                                 <div class="award-item">
+                                    <span class="ico-8"></span>
+                                    <p>Q币*100</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="s-tit"><span>肆</span> 活动规则</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="rule-list-wrap">
+                              <ol class="rule-list">
+                                 <li>
+                                    本次活动的参赛作品需在2025年8月08日10:00:00-2025年8月31日23:59:59【投稿期】内，按照指定格式成功发布天涯明月刀手游赛季版相关内容即视为成功参与，单个作品仅可在多平台参与一次活动；
+                                 </li>
+                                 <li>本次活动的参赛作品须按照相关活动规则读取至活动页面内，不符合活动投稿范圈和主题要求的作品将不计入评选范围；</li>
+                                 <li>本次活动的参赛作品均需要经审核后方可视为成功投稿，预计在48小时左右完成，请少侠耐心等待；</li>
+                                 <li>本次活动的参赛作品需内容积极健康，禁止发布一切涉及色情血腥、暴力以及违反国家法律法规、带有任何扭曲历史，丑化贬低中华民族精神及人性的内容，一经发现将取消参赛资格；
+                                 </li>
+                                 <li>本次活动的参赛选手对参赛作品的版权、著作权以及肖像权负法律责任，不得盗用、剽窃和抄袭他人作品；</li>
+                                 <li>如发现他人的作品内容涉嫌抄袭或盗用，可前往官方账号进行举报申诉，参赛者因剽窃他人作品而产生法律纠纷，将由参赛者承担法律责任，与主办以及承办单位无关；</li>
+                                 <li>
+                                    本次活动的所有获奖作品将默认《天涯明月刀》手游官方有使用其作品的权利，包括但不限于宣传活动作品等非商业和商业使用途径，作品经由官方平台宣传并非视为获奖，奖励评选将以最终获奖名单为准。同时未经主办方同意，作者不得将参赛作品自行用于商业用途或授权于任何第三方使用，否则将取消评奖资格；
+                                 </li>
+                                 <li>本次活动的参赛者不得出现数据造假、恶意刷票等情况，一经官方核实，将取消参赛资格；</li>
+                                 <li>如参赛者因个人原因未能在规定时间15天内在活动页面(2025年10月7日23:59:59前)领取奖品或填写相关获奖信息，则视为主动放弃奖励。</li>
+                              </ol>
+                              <div class="go-detail-rule-btn" id="goDetailBtn">了解更多详情规则</div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                  </div>
+                  <div class="tab-bd-cont">
+                     <div class="s-tit s-tit-b"><span>壹</span> 如何投稿请看我</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <p>1.在活动投稿期内，少侠在活动页面通过登录绑定天涯明月刀手 游单一账号和单一游戏角色后，在【微博赛道】活动页面选择
+                                 【我要投稿】，👇点击下方【点我投稿】按钮，按照提示绑定有效的单一微博账号（活动期间不可解绑）；</p>
+                              <div class="bind-wb-btn btn_djsq">点击授权个人微博主页</div>
+                              <p>2.少侠绑定成功后，可在微博平台天涯明月刀手游超话内带#天刀手游新赛季侠至#和#绝代侠客在天涯#两大活动话题投稿上传天刀手游相关原创作品，并按照操作指引参与微博专区活动，完成对应任务还可领丰厚奖励哦！
+                              </p>
+                              <div class="zs-tool-btn-wrap mb-0">
+                                 <div class="zs-tool-btn zs-tool-btn-1 fcbtn_t1" data-id="tg" data-type="dialog">点我投稿
+                                 </div>
+                                 <div class="zs-tool-btn zs-tool-btn-2 btn_tz3" data-id="myWorks" data-type="dialog">
+                                    我的作品</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="s-tit"><span>贰</span> 稿件要求</div>
+                     <div class="area-box-wrap area-box-wrap-odd">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="sub-area-title sub-area-title-b">投稿方式-链接投稿</div>
+                              <p>如少侠想投稿未同步至少侠所绑定的个人微博主页的创作内容，少侠点击【点我投稿】时，需要少侠复制超话作品链接，并在【微博创作专区】活动页面内按照指引，粘贴链接进行投稿。</p>
+                              <div class="sub-area-title sub-area-title-b">投稿方式-页面读取</div>
+                              <p>如少侠想投稿已同步至微博主页的作品，少侠成功绑定个人微博主页后，可先在微博天涯明月刀手游超话带两大活动话题自主投稿，后点击【点我投稿】按钮自动读取所需作品（投稿页面仅读取最新5条作品）并选择投稿，如页面中未显示所需作品，少侠可通过【链接投稿】提交作品链接的方式进行投稿。
+                              </p>
+                              <div class="sub-area-title sub-area-title-b">投稿须知</div>
+                              <p>少侠需要在【投稿期】内带#天刀手游新赛季侠至#和#绝代侠客在天涯#两大活动话题投稿上传天刀手游相关原创图文作品或视频作品，纯文字作品将会直接判定为不合格；</p>
+                              <p>为确保活动排名公平公正，活动期间以及活动结束后少侠请勿擅自去除投稿作品的活动话题或删除作品。</p>
+                              <div class="txt-img-box"><img
+                                    src="https://game.gtimg.cn/images/ty/act/a20250714czz/tg-img.jpg" alt="" width="540"
+                                    height="310"></div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="s-tit"><span>叁</span> 作品参考</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="sub-area-title">图文作品</div>
+                              <div class="swiper mySwiper1">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img
+                                          src="https://game.gtimg.cn/images/ty/act/a20250714czz/pic-1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img
+                                          src="https://game.gtimg.cn/images/ty/act/a20250714czz/pic-2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img
+                                          src="https://game.gtimg.cn/images/ty/act/a20250714czz/pic-3.jpg" alt=""></div>
+                                    <div class="swiper-slide">
+                                       <div class="txt-img-box"><img
+                                             src="https://game.gtimg.cn/images/ty/act/a20250714czz/pic-4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide"><img
+                                          src="https://game.gtimg.cn/images/ty/act/a20250714czz/pic-5.jpg" alt=""></div>
+                                 </div>
+                                 <div class="swiper-pagination"></div>
+                                 <div class="swiper-button-next left1"></div>
+                                 <div class="swiper-button-prev left2"></div>
+                              </div>
+                              <div class="sub-area-title">视频作品</div>
+                              <div class="swiper mySwiper2">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="js-btn" data-id="e3095eejnww" data-type="video"><img
+                                             src="https://game.gtimg.cn/images/ty/act/a20250714czz/vpic-5.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="js-btn" data-id="v3092388yrf" data-type="video"><img
+                                             src="https://game.gtimg.cn/images/ty/act/a20250714czz/vpic-4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="txt-img-box js-btn" data-id="y3093d11p0y" data-type="video"><img
+                                             src="https://game.gtimg.cn/images/ty/act/a20250714czz/vpic-1.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="js-btn" data-id="i3094pwxhk2" data-type="video"><img
+                                             src="https://game.gtimg.cn/images/ty/act/a20250714czz/vpic-2.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div class="js-btn" data-id="l3090apfyer" data-type="video"><img
+                                             src="https://game.gtimg.cn/images/ty/act/a20250714czz/vpic-3.jpg" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="swiper-pagination"></div>
+                                 <div class="swiper-button-next left1"></div>
+                                 <div class="swiper-button-prev left2"></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                  </div>
+                  <div class="tab-bd-cont  part5_wrap part5">
+                     <div class="s-tit s-tit-b"><span>壹</span> 绝代侠客奖</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <p>在本次征集活动中，刀妹收到了颇多创意满分、制作精良的作品，由衷感谢各位少侠的投稿和参与，综合作品人气、质量、官方评选等，现将获奖名单公示如下</p>
+                              <div class="zs-tool-btn-wrap">
+                                 <div class="zs-tool-btn zs-tool-btn-1 btn_lq4 gray">领取道具奖励</div>
+                                 <div class="zs-tool-btn zs-tool-btn-2 btn_lq3">提交Q币账号</div>
+                              </div>
+                              <div class="sub-area-title">TOP1</div>
+                              <div class="zs-work-list-box">
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img zp_img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                              </div>
+                              <div class="sub-area-title video_fine1">TOP2~3</div>
+                              <div class="zs-work-list-box video_fine1">
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img zp_img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img zp_img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                              </div>
+                              <div class="sub-area-title video_fine2">TOP4-10</div>
+                              <div class="zs-work-list-box zs-work-list-box-2 video_fine2">
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item video_item1">
+                                    <div class="zs-work-list-item-img iframe1"></div>
+                                    <p class="zz_name txt9">作品名称</p>
+                                 </div>
+                              </div>
+                              <div class="sub-area-title video_fine3">TOP11-20</div>
+                              <div class="zs-work-list-box zs-work-list-box-2 video_fine3">
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                                 <div class="zs-work-list-item">
+                                    <div class="zs-work-list-item-img"></div>
+                                    <p>作品名称</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                     <div class="s-tit s-tit-b"><span>贰</span> 名气排行榜</div>
+                     <div class="area-box-wrap part6_wrap part6">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <div class="zs-tool-btn-wrap">
+                                 <div class="zs-tool-btn zs-tool-btn-1 btn_lq4 gray">领取道具奖励</div>
+                                 <div class="zs-tool-btn zs-tool-btn-2 btn_lq3">提交Q币账号</div>
+                              </div>
+                              <div class="sub-area-title">TOP1</div>
+                              <div class="zs-work-list-box">
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+                              </div>
+                              <div class="sub-area-title">TOP2~3</div>
+                              <div class="zs-work-list-box">
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+                              </div>
+                              <div class="sub-area-title video_box1">TOP4-10</div>
+                              <div class="zs-work-list-box zs-work-list-box-2 video_box1">
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+                              </div>
+                              <div class="sub-area-title video_box2">TOP11-20</div>
+                              <div class="zs-work-list-box zs-work-list-box-2 video_box2">
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+                              </div>
+
+
+                              <div class="sub-area-title video_box3">Top21-30</div>
+                              <div class="zs-work-list-box zs-work-list-box-2 video_box3">
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+
+                                 <div class="zs-work-list-item video_item">
+                                    <div class="zs-work-list-item-img zp_img iframe"></div>
+                                    <p class="zz_name txt4">作品名称</p>
+                                    <div class="like-p xaz_txt txt5">喜爱值：1000</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                  </div>
+                  <div class="tab-bd-cont">
+                     <div class="s-tit s-tit-b"><span>壹</span> 达成任务领奖励</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="task-list-wrap">
+                              <div class="task-list-item">
+                                 <div class="task-name">织心裁意头像框&头顶图标*1</div>
+                                 <div class="task-info">成功投稿稿件≥1条</div>
+                                 <div class="task-btn contribute_task_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">人气作品奖C档</div>
+                                 <div class="task-info">5≤喜爱值≤29</div>
+                                 <div class="task-finish-num task_num"><em class="count">0</em>/3</div>
+                                 <div class="task-btn contribute_gears_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">人气作品奖B档</div>
+                                 <div class="task-info">30≤喜爱值≤99</div>
+                                 <div class="task-finish-num task_num"><em class="count">0</em>/3</div>
+                                 <div class="task-btn contribute_gears_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">人气作品奖A档</div>
+                                 <div class="task-info">100≤喜爱值≤499</div>
+                                 <div class="task-finish-num task_num"><em class="count">0</em>/3</div>
+                                 <div class="task-btn contribute_gears_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">人气作品奖S档</div>
+                                 <div class="task-info">喜爱值≥500</div>
+                                 <div class="task-finish-num task_num"><em class="count">0</em>/3</div>
+                                 <div class="task-btn contribute_gears_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">投票助力奖</div>
+                                 <div class="task-info">成功投票≥5次</div>
+                                 <div class="task-finish-num task_num">投票次数<em class="user_vote_count">0</em>/5</div>
+                                 <div class="task-btn contribute_vote_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">投票助力奖</div>
+                                 <div class="task-info">成功投票≥15次</div>
+                                 <div class="task-finish-num task_num">投票次数<em class="user_vote_count">0</em>/15</div>
+                                 <div class="task-btn contribute_vote_btns">领取</div>
+                              </div>
+                              <div class="task-list-item">
+                                 <div class="task-name">投票助力奖</div>
+                                 <div class="task-info">成功投票≥30次</div>
+                                 <div class="task-finish-num task_num">投票次数<em class="user_vote_count">0</em>/30</div>
+                                 <div class="contribute_vote_btns task-btn">领取</div>
+                              </div>
+                           </div>
+                           <div class="task-tool-btn-wrap">
+                              <div onclick="dialogHandler.show('record');" id="getReceiveRecord"
+                                 class="task-tool-btn-1 btn_lqjl">领取记录</div>
+                              <div class="task-tool-btn-2 btn_txxx btn_lq3">填写信息</div>
+                           </div>
+                        </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                  </div>
+                  <div class="tab-bd-cont">
+                     <div class="s-tit s-tit-b"><span>壹</span> 如何投票请看我</div>
+                     <div class="area-box-wrap">
+                        <div class="area-box-cont">
+                           <div class="area-box-cont-inner">
+                              <ol>
+                                 <li>1.每位少侠在活动【投票期】内（2025年9月03日-2025年9月14日，共11天）每天有5次投票机会，单日不可重复投给同一作品；</li>
+                                 <li>2.少侠请先登录并绑定游戏角色和微博账号才可进行活动投票，为应援作品投出【喜爱值】；</li>
+                                 <li>3.少侠投票次数满5/15/30次后可领取前往【奖励中心】领取【焕彩之砂】奖励，快给你喜爱的作品投出宝贵的一票吧~</li>
+                              </ol>
+                              <div class="works-list-wrap">
+
+                                 <div class="works-filter">
+
+
+                                    <!-- 下面是旧的筛选 -->
+                                    <!-- <ul class="sort_list tab_select">
+                                       <li class="tab cur" is_latest="true" is_hot="false">
+                                          <em></em>
+                                          <span>最新</span>
+                                       </li>
+                                       <li class="tab" is_latest="false" is_hot="true">
+                                          <em></em>
+                                          <span>最热</span>
+                                       </li>
+                                    </ul> -->
+                                    <!-- 下面是新的筛选 -->
+                                    <div class="works-filter-item">
+                                        <input type="radio" name="radio" id="radio1" checked="checked" is_latest="true" is_hot="false"> 
+                                        <label for="radio1">最新</label>
+                                    </div>
+                                    <div class="works-filter-item">
+                                        <input type="radio" name="radio" id="radio2" is_latest="false" is_hot="true"> 
+                                        <label for="radio2">最热</label>
+                                    </div>
+                                 </div>
+
+                                 <div class="works-search-box">
+                                    <span>搜索作品：</span> <input type="text" value="" />
+                                    <div class="works-search-btn btn_query">查询</div>
+                                 </div>
+                                 <div class="works-list-box vote_list">
+                                    <div class="works-list-item">
+                                       <div class="works-list-item-img"></div>
+                                       <div class="works-list-item-info">
+                                          <div>作品编号:</div>
+                                          <p>喜爱值：</p>
+                                       </div>
+                                       <div class="works-list-item-copy-btn">复制</div>
+                                       <div class="works-list-item-btn">投票</div>
+                                    </div>
+                                    <div class="works-list-item">
+                                       <div class="works-list-item-img"></div>
+                                       <div class="works-list-item-info">
+                                          <div>作品编号:</div>
+                                          <p>喜爱值：</p>
+                                       </div>
+                                       <div class="works-list-item-copy-btn">复制</div>
+                                       <div class="works-list-item-btn">投票</div>
+                                    </div>
+                                 </div>
+                                 <div class="works-list-pager page_box vote_pager">
+                                    <div class="page_num pager_item">
+                                       <span>1</span>
+                                    </div>
+                                    <!-- <div class="works-list-pager-btn works-list-pager-btn-prev"></div>
+                                       <span>1</span>
+                                       <div class="works-list-pager-btn works-list-pager-btn-next"></div> -->
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="area-box-wrap-ico-1"></div>
+                           <div class="area-box-wrap-ico-3"></div>
+                           <div class="area-box-wrap-ico-2"></div>
+                           <div class="area-box-wrap-ico-4"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
+            <div class="area-2 area-wrap" id="ruleArea">
+               <div class="main-cont-tit">
+                  <p><span>微博创作计划活动详情规则</span></p>
+               </div>
+               <div class="area-box-wrap">
+                  <div class="area-box-cont">
+                     <div class="area-box-cont-inner rule-detail-txt">
+                        <p class="font-db1010">一、活动名称</p>
+                        <p>天涯明月刀手游微博创作征集计划-绝代侠客在天涯主题</p>
+                        <p class="font-db1010 mt-15">二、活动简介</p>
+                        <p>本次活动由天涯明月刀手游项目组举办，旨在鼓励玩家创意，创作优秀的视图文和视频内容，共同建设天涯明月刀手游的精品内容生态。</p>
+                        <p class="font-db1010 mt-15">三、活动时间</p>
+                        <p>活动时间自2025年8月08日10:00:00起至2025年9月21 日23:59:59结束。</p>
+                        <p class="font-db1010 mt-15">四、权利声明</p>
+                        <p>腾讯是腾讯游戏的知识产权权利人。腾讯游戏（包括但不限于腾 讯游戏整体、游戏内所包含的所有美术、音乐、文字作品和其他 游戏构成要素、组成部分，以及腾讯游戏运行呈现的连续动态画 面）的一切著作权、商标权、专利权、商业秘密等知识产权及其 他合法权益，以及与腾讯游戏相关的所有信息内容（包括文字、 图片、音频、视频、图表、界面设计、版面框架、有关数据或电 子文档等）均受中华人民共和国法律法规和相应的国际条约保护， 腾讯享有上述知识产权和合法权益，但相关权利人依照法律规定 应享有的权利除外。未经腾讯事先书面同意，任何玩家不得以任 何方式将腾讯游戏（包括但不限于腾讯游戏整体、游戏内所包含 的所有美术、音乐、文字作品和其他游戏构成要素、组成部分， 以及腾讯游戏运行呈现的连续动态画面）进行商业性使用或通过 信息网络传播腾讯游戏版权内容。</p>
+                        <p class="font-db1010 mt-15">五、活动资格</p>
+                        <p>所有玩家（下称：投稿者）应具备以下全部资格：</p>
+                        <ol>
+                           <li>
+                              <span>（1）</span>
+                              <p>您应年满16周岁；</p>
+                           </li>
+                           <li>
+                              <span>（2）</span>
+                              <p>若您为不具备完全民事行为能力的未成年人，您应当在监护人的陪同下阅读本规则，并取得您监护人的同意；</p>
+                           </li>
+                           <li>
+                              <span>（3）</span>
+                              <p>您参与本活动的游戏账号应当有在本活动开启前，在《天涯明月刀手游》中的注册记录，且已经完成实名认证。</p>
+                           </li>
+                           <li>
+                              <span>（4）</span>
+                              <p>您应使用您本人注册登录的微博平台账号发布稿件参与投稿。</p>
+                           </li>
+                        </ol>
+                        <p class="font-db1010 mt-15">六、活动规则</p>
+                        <p>1.参与方式</p>
+                        <p>在活动有效期内，用户通过登录绑定天涯明月刀手游游戏账号后，在页面选择【我要投稿】，之后按照提示绑定有效的【微博账号】（单一游戏账号绑定单一微博账号）。在拉取到用户微博账号投稿数据后，用户可以选择其在微博发布过投稿内容进行投稿。用户也可以在活动页面提交链接投稿。投稿之后，根据稿件数据获得对应奖励。主办方承诺将对上述信息中所有涉及个人隐私的内容予以保密，但可能会为宣传推广比赛及营销活动等目的使用您的游戏昵称、头像、稿件等个人信息，包括但不限于在官方网站公示获奖者名单、对媒体披露获奖者的信息等行为。</p>
+                        <p>2.作品内容要求：</p>
+                        <ol>
+                           <li>
+                              <span>（1）</span>
+                              <p>您应保证投稿内容为其独立制作，并保证其提供的上述内容不侵犯任何第三方的合法权益（该权益包括但不限于著作权、商标权、形象权和名誉权等权益）。如果投稿内容存在或导致任何法律纠纷，将自动丧失参赛资格。主办方有权要求您随时提供投稿内容相关的所有权利证明，包括但不限于授权书、著作权登记证书以及商标注册证书等。</p>
+                           </li>
+                           <li>
+                              <span>（2）</span>
+                              <p>您应保证投稿内容中不含有：违反国家法律法规、危害国家安全统一、破坏社会稳定、违反公序良俗以及侮辱、诽谤、淫秽或含有任何性或性暗示的、暴力的内容；侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的内容；涉及他人隐私、个人信息或资料的内容；骚扰、广告信息及垃圾信息；境外电视台，境外制作公司的台标等logo；恶意虚构事实、隐瞒真相以误导、欺骗他人的内容；其他违反法律法规、政策及公序良俗、社会公德或侵犯其他用户或第三方合法权益内容的信息。</p>
+                           </li>
+                           <li>
+                              <span>（3）</span>
+                              <p>一旦发现投稿内容中含有前述内容，主办方有权不经通知随时删除上述内容。如因投稿内容违反本投稿规则相关要求，导致相关国家机关或机构提起诉讼、罚款或采取其他行政制裁措施或者导致任何第三方受到损害的，您应当承担全部责任；主办方或第三方因此遭受损失的，您也应一并赔偿。</p>
+                           </li>
+                           <li>
+                              <span>（4）</span>
+                              <p>我们特别提倡的作品:</p>
+                              <ol>
+                                 <li>
+                                    <span>a.</span>
+                                    <p>围绕《天涯明月刀》手游，进行展开，立意明确，有个人观点;</p>
+                                 </li>
+                              </ol>
+                           </li>
+                           <li>
+                              <span>（5）</span>
+                              <p>我们坚决不要的作品:</p>
+                              <ol>
+                                 <li>
+                                    <span>a.</span>
+                                    <p>任何出现政治敏感、色情、赌博等违法违规内容的作品;</p>
+                                 </li>
+                                 <li>
+                                    <span>b.</span>
+                                    <p>AI合成、洗稿等形式生成的内容；</p>
+                                 </li>
+                                 <li>
+                                    <span>c.</span>
+                                    <p>任何含有低俗倾向、利用游戏功能影射或创作低俗内容的作品;</p>
+                                 </li>
+                                 <li>
+                                    <span>d.</span>
+                                    <p>任何含有拉踩、辱骂、恶意贬低、抹黑游戏的作品;</p>
+                                 </li>
+                                 <li>
+                                    <span>e.</span>
+                                    <p>任何包含未成年人不良价值观及不良行为诱导的作品，如:恐怖猎奇、血腥暴力、儿童邪典、外貌焦虑、画风引人不适等；包括福利擦边向的内容；</p>
+                                 </li>
+                                 <li>
+                                    <span>f.</span>
+                                    <p>任何带营销属性的作品(与本活动无关)，不利展示和发放、其他游戏平台的宣导等;</p>
+                                 </li>
+                                 <li>
+                                    <span>g.</span>
+                                    <p>任何抄袭搬运的作品;</p>
+                                 </li>
+                                 <li>
+                                    <span>h.</span>
+                                    <p>任何恶意骗赞、诱导评论转发互动等数据作假的作品;</p>
+                                 </li>
+                                 <li>
+                                    <span>i.</span>
+                                    <p>存在较大质量问题的作品，如:黑屏、画面卡顿、画质模糊、口播不清晰、音频不完整、直接搬运官方素材、原创度低、无主题纯录屏。</p>
+                                 </li>
+                              </ol>
+                           </li>
+                        </ol>
+                        <p class="mt-15">3.知识产权条款</p>
+                        <ol>
+                           <li>
+                              <span>（1）</span>
+                              <p>投稿内容一经提交，即代表您同意并授权腾讯公司有权直接实施以下行为而无需事先与您协商或取得您同意：自行或授权（包括授予第三方转授权或分许可的权利）其他任何第三方以任何方式行使投稿内容涉及的著作权及邻接权、商标权及其他知识产权或以任何方式使用该投稿内容（前述“使用”包括但不限于复制、发行、出租、展览、表演、广播、修改、改编、信息网络传播及其他方式使用，同时包括商业目的和非商业目的使用）。</p>
+                           </li>
+                        </ol>
+                        <p class="mb-10 mt-15">4.奖项设置：</p>
+                        <table cellpadding="0" cellspacing="0" border="1" align="center">
+                           <tr>
+                              <th width="20%">奖项名称</th>
+                              <th width="25%">奖励内容</th>
+                              <th width="20%">发奖方式</th>
+                              <th width="15%">奖品数量</th>
+                              <th width="20%">奖励要求</th>
+                           </tr>
+                           <tr>
+                              <td rowspan="2">投稿必得</td>
+                              <td>限定头像框- 织心裁意(30天)*1</td>
+                              <td rowspan="2">游戏内 邮件发放</td>
+                              <td rowspan="2">1000000</td>
+                              <td rowspan="2">参与活动且 过审稿件≥1条</td>
+                           </tr>
+                           <tr>
+                              <td>限定头顶图标-织 心裁意(30天)*1</td>
+                           </tr>
+                           <tr>
+                              <td>投票助力奖<br>-第一档</td>
+                              <td>焕彩之砂*5</td>
+                              <td>游戏内 邮件发放</td>
+                              <td>1000000</td>
+                              <td>投票期期间【微 博赛道】参与作 品投票，且 投票次数 ≥5次</td>
+                           </tr>
+                           <tr>
+                              <td>投票助力奖<br>-第二档</td>
+                              <td>焕彩之砂*10</td>
+                              <td>游戏内 邮件发放</td>
+                              <td>1000000</td>
+                              <td>投票期期间【微 博赛道】参与作 品投票，且投 票次数 ≥15次</td>
+                           </tr>
+                           <tr>
+                              <td>投票助力奖<br>-第三档</td>
+                              <td>焕彩之砂*15</td>
+                              <td>游戏内 邮件发放</td>
+                              <td>1000000</td>
+                              <td>投票期期间【微 博赛道】参与作 品投票，且投 票次数 ≥30次</td>
+                           </tr>
+                           <tr>
+                              <td>群侠人气奖 -C档</td>
+                              <td>限定聊天气泡-织 心裁意(30天)*1</td>
+                              <td>游戏内 邮件发放</td>
+                              <td>1000000</td>
+                              <td>单条作品累计 喜爱值达到 5</td>
+                           </tr>
+                           <tr>
+                              <td>群侠传播奖 -B档</td>
+                              <td>天衣礼券*5</td>
+                              <td>游戏内 邮件发放</td>
+                              <td>1000000</td>
+                              <td>单条作品累计 喜爱值达到30</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="2">群侠传播奖 -A档</td>
+                              <td>天衣礼券*10</td>
+                              <td rowspan="2">游戏内 邮件发放</td>
+                              <td rowspan="2">1000000</td>
+                              <td rowspan="2">单条作品累计 喜爱值达到100</td>
+                           </tr>
+                           <tr>
+                              <td>随心染匣*5</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="2">群侠传播奖 -S档</td>
+                              <td>天衣礼券*20</td>
+                              <td rowspan="2">游戏内 邮件发放</td>
+                              <td rowspan="2">1000000</td>
+                              <td rowspan="2">单条作品累计 喜爱值达到500</td>
+                           </tr>
+                           <tr>
+                              <td>随心染匣*10</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="3">名气排行奖- TOP1-3</td>
+                              <td>月灵石*1666</td>
+                              <td rowspan="3">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="3">3</td>
+                              <td rowspan="10">根据单条作品 在【公示期】 9月16日0点0 分进行最终 【喜爱值】排行 （取排名高值） 并通过人工 审核</td>
+                           </tr>
+                           <tr>
+                              <td>限定头顶图标-同人 之星*1</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*288</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="3">名气排行奖- TOP4-10</td>
+                              <td>月灵石*888</td>
+                              <td rowspan="3">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="3">7</td>
+                           </tr>
+                           <tr>
+                              <td>限定头顶图标-同人 之星*1</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*166</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="2">名气排行奖- TOP11-20</td>
+                              <td>月灵石*520</td>
+                              <td rowspan="2">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="2">10</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*100</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="2">名气排行奖- TOP21-30</td>
+                              <td>月灵石*388</td>
+                              <td rowspan="2">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="2">10</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*66</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="4">绝代侠客奖- TOP1</td>
+                              <td>月灵石*3000</td>
+                              <td rowspan="4">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="4">1</td>
+                              <td rowspan="15">活动投稿结束 后，将根据过 审稿件内容的 质量、热度以 及创意等综合 维度进行人工 审核并排名 公示</td>
+                           </tr>
+                           <tr>
+                              <td>限定头顶图标-同人 之星*1</td>
+                           </tr>
+                           <tr>
+                              <td>限定头像框-同人之 星·金(90天)*1</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*666</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="4">绝代侠客奖- TOP2-3</td>
+                              <td>月灵石*1888</td>
+                              <td rowspan="4">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="4">2</td>
+                           </tr>
+                           <tr>
+                              <td>限定头顶图标-同人 之星*1</td>
+                           </tr>
+                           <tr>
+                              <td>限定头像框-同人之 星·银(90天)*1</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*300</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="4">绝代侠客奖- TOP4-10</td>
+                              <td>月灵石*1888</td>
+                              <td rowspan="4">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="4">7</td>
+                           </tr>
+                           <tr>
+                              <td>限定头顶图标-同人 之星*1</td>
+                           </tr>
+                           <tr>
+                              <td>限定头像框-同人之 星·铜(90天)*1</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*300</td>
+                           </tr>
+                           <tr>
+                              <td rowspan="3">绝代侠客奖- TOP11-20</td>
+                              <td>月灵石*888</td>
+                              <td rowspan="3">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                              <td rowspan="3">10</td>
+                           </tr>
+                           <tr>
+                              <td>限定头像框-同人之 星·铜(90天)*1</td>
+                           </tr>
+                           <tr>
+                              <td>Q币*100</td>
+                           </tr>
+                        </table>
+                        <p>5.活动安排：</p>
+                        <p>投稿排名结果将在结果公示期对应页面展示。</p>
+                        <p class="mt-15">6.奖品兑换与发放：</p>
+                        <ol>
+                           <li>
+                              <span>（1）</span>
+                              <p>游戏道具将通过游戏内邮箱发放，领取后会即时到账（视网络情况会存在短暂延迟）；</p>
+                           </li>
+                           <li>
+                              <span>（2）</span>
+                              <p>Q币奖励将通过页面填写对应账号确认领奖信息后发放；请留意结果公示期中的填写页面，即时进行兑奖。兑换成功后15个工作日内将发放奖励；</p>
+                           </li>
+                           <li>
+                              <span>（3）</span>
+                              <p>结果公示期会在活动结束后15个工作日内，若因个人原因在2025年10月07日23:59前主办方无法联系进行兑奖，将默认您放弃对应奖励。</p>
+                           </li>
+                        </ol>
+                        <p class="font-db1010 mt-15">七、参与资格、获奖资格的取消</p>
+                        <p>您若有下列任何一种行为或情况的，腾讯有权单方面取消您的参与资格、获奖资格等：</p>
+                        <ol>
+                           <li></li>
+                           <li>
+                              <span>（2）</span>
+                              <p>提供虚假信息的；</p>
+                           </li>
+                           <li>
+                              <span>（3）</span>
+                              <p>虚假交易或恶意破坏活动的；</p>
+                           </li>
+                           <li>
+                              <span>（4）</span>
+                              <p>以任何机器人软件、蜘蛛软件、爬虫软件、刷奖软件或其它任何自动方式、不正当手段等参与本活动的；</p>
+                           </li>
+                           <li>
+                              <span>（5）</span>
+                              <p>有任何违反诚实信用、公序良俗、公平、公正等原则行为的；</p>
+                           </li>
+                           <li>
+                              <span>（6）</span>
+                              <p>其他违反相关法规、本规则行为的。</p>
+                           </li>
+                        </ol>
+                        <p class="font-db1010 mt-15">八、免责条款</p>
+                        <ol>
+                           <li>
+                              <span>1.</span>
+                              <p>您知悉互联网存在诸多不确定性因素，因此理解并同意，如因不可抗力、网络、通讯线路故障、计算机大规模瘫痪及活动中存在大面积作弊行为等非腾讯原因致使本活动出现异常情况或难以继续开展的，腾讯有权采取包括但不限于通过各种方式消除异常情况或调整、暂停、取消本活动等措施，因此造成用户损失的，腾讯不承担任何责任。</p>
+                           </li>
+                           <li>
+                              <span>2.</span>
+                              <p>您应关注本活动规则有关时间的约定，如因非腾讯原因导致您在本规则约定时间内未参与活动、兑换奖品或领取奖品，则视为您放弃参与活动或放弃领奖，全部损失由您自行承担，腾讯不会给予您任何形式的补偿。</p>
+                           </li>
+                           <li>
+                              <span>3.</span>
+                              <p>您应按照腾讯要求如实提供您联系地址等信息，如由于您提供的信息不真实不完整等导致奖品无法发放或发放错误等一切后果，由您自行承担。</p>
+                           </li>
+                        </ol>
+                        <p class="font-db1010 mt-15">九、管辖条款</p>
+                        <ol>
+                           <li>
+                              <span>1.</span>
+                              <p>本规则签订地为中华人民共和国广东省深圳市南山区。</p>
+                           </li>
+                           <li>
+                              <span>2.</span>
+                              <p>本规则的成立、生效、履行、解释及纠纷解决等相关事宜，均适用中华人民共和国大陆地区法律（不包括冲突法）。</p>
+                           </li>
+                           <li>
+                              <span>3.</span>
+                              <p>若您和腾讯之间发生任何纠纷或争议，首先应友好协商解决；协商不成的，您同意将纠纷或争议提交本规则签订地有管辖权的人民法院管辖。</p>
+                           </li>
+                        </ol>
+                     </div>
+                  </div>
+                  <div class="area-box-wrap-ico-1"></div>
+                  <div class="area-box-wrap-ico-3"></div>
+                  <div class="area-box-wrap-ico-2"></div>
+                  <div class="area-box-wrap-ico-4"></div>
+               </div>
+            </div>
+         </div>
+         <div class="bg-box">
+            <div class="bg-1"></div>
+         </div>
+
+         <div class="bottom-link-box active" id="bottomBox1">
+          <a href="indexbz.html" class="b-btn-1">B站赛道</a> 
+          <a href="index.html" class="b-btn-2">微博赛道</a>
         </div>
-        <!-- 活动公示 -->
-        <div class="con con3">
-            <!-- 种田糕手奖 -->
-            <div class="gs_box1 part5_wrap part5">
-                <p class="gjyq_txt">
-                    在本次征集活动中，刀妹收到了颇多创意满分、制作精良的作品，由衷感谢各位少侠的投稿和参与，综合作品人气、质量、官方评选等，现将获奖名单公示如下：</p>
-                <div class="big_btn">
-                    <a href="javascript:;" class="sp btn_red btn_lq4 gray">领取道具奖励</a>
-                    <a href="javascript:;" class="sp btns_green btn_lq3">提交Q币账号</a>
-                </div>
-
-                <div class="top_tit sp">Top1</div>
-                <ul class="top_list">
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                </ul>
-
-                <div class="top_tit sp video_fine1">Top2-3</div>
-                <ul class="top_list video_fine1">
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                </ul>
-
-                <div class="top_tit sp video_fine2">Top4-10</div>
-                <ul class="top_list top_list2 video_fine2">
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                    <li class="video_item1">
-                        <div class="zp_img iframe1">
-                            <a href="javascript:;" class="btn_plays sp"></a>
-                        </div>
-                        <p class="zz_name txt9">作者名称</p>
-                    </li>
-                </ul>
-            </div>
-            <!-- 爱心排行奖 -->
-            <div class="gs_box2 part6_wrap part6">
-                <div class="big_btn">
-                    <a href="javascript:;" class="sp btn_red btn_lq4 gray">领取道具奖励</a>
-                    <a href="javascript:;" class="sp btns_green btn_lq3">提交Q币账号</a>
-                </div>
-                <div class="overflow_y">
-                    <div class="top_tit sp">Top1-3</div>
-                    <ul class="top_list top_list2">
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                    </ul>
-    
-                    <div class="top_tit sp video_box1">Top4-10</div>
-                    <ul class="top_list top_list2 video_box1">
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                    </ul>
-    
-                    <div class="top_tit sp video_box2">Top11-20</div>
-                    <ul class="top_list video_box2">
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                    </ul>
-    
-                    <div class="top_tit sp video_box3">Top21-30</div>
-                    <ul class="top_list video_box3">
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                        <li class="video_item">
-                            <div class="zp_img iframe">
-                                <a href="javascript:;" class="btn_plays sp"></a>
-                            </div>
-                            <p class="zz_name txt4">作者名称</p>
-                            <p class="xaz_txt txt5"></p>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
+         <div class="bottom-link-box" id="bottomBox2">
+          <a href="javascript:;" class="b-btn-1" id="leaveRuleBtn">返回首页</a> 
+          <a href="indexbz.html" class="b-btn-2">B站赛道</a>
         </div>
-        <!-- 奖励中心 -->
-        <div class="con con4">
-            <div class="task_box">
-                <ul class="task_list">
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">织心裁意头像框&头顶图标*1</p>
-                            <p class="task_txt2">成功投稿稿件≥1条</p>
+
+
+         <div class="dialog-wrap" id="msgDialog">
+            <div class="dialog-cont">
+               <div class="area-box-wrap">
+                  <div class="area-box-cont">
+                     <div class="area-box-cont-inner">
+                        <div class="msg-box" id="msgContTxt">请少侠绑定游戏角色</div>
+                        <div class="dialog-btn-box">
+                           <div class="dialog-btn-1">确认</div>
+                           <div class="dialog-btn-2 dialog-btn-close">确认</div>
                         </div>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_task_btns btn_lq sp gray">领取</a>
-                    </li>
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">人气作品奖C档</p>
-                            <p class="task_txt2">5≤喜爱值≤29</p>
+                     </div>
+                  </div>
+                  <div class="area-box-wrap-ico-1"></div>
+                  <div class="area-box-wrap-ico-3"></div>
+                  <div class="area-box-wrap-ico-2"></div>
+                  <div class="area-box-wrap-ico-4"></div>
+               </div>
+               <div class="dialog-close">关闭</div>
+            </div>
+            <div class="dialog-mask"></div>
+         </div>
+         <div class="dialog-wrap" id="shareDialog">
+            <div class="dialog-cont">
+               <div class="area-box-wrap">
+                  <div class="area-box-cont">
+                     <div class="area-box-cont-inner">
+                        <div class="dialog-tit"><span>分享拉票赢喜爱值</span></div>
+                        <div class="share-info-txt">嗨我的盆友，我正在参加【天涯明月刀手游赛季版-绝代侠客在天涯微博创作征集计划活动】，我的作品编号是：66666 你一票我一票，助力少侠我今天就成为江湖顶级侠客，赢月灵石和Q币大奖吧！</div>
+                        <div class="dialog-btn-box">
+                           <div class="dialog-btn-1">确认分享</div>
+                           <div class="dialog-btn-2 dialog-btn-close">取消</div>
                         </div>
-                        <p class="task_num"><em class="count">0</em>/3</p>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
-                    </li>
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">人气作品奖B档</p>
-                            <p class="task_txt2">30≤喜爱值≤99</p>
+                     </div>
+                  </div>
+                  <div class="area-box-wrap-ico-1"></div>
+                  <div class="area-box-wrap-ico-3"></div>
+                  <div class="area-box-wrap-ico-2"></div>
+                  <div class="area-box-wrap-ico-4"></div>
+               </div>
+               <div class="dialog-close">关闭</div>
+            </div>
+            <div class="dialog-mask"></div>
+         </div>
+         <div class="dialog-wrap" id="inputDialog">
+            <div class="dialog-cont">
+               <div class="area-box-wrap">
+                  <div class="area-box-cont">
+                     <div class="area-box-cont-inner">
+                        <div class="dialog-tit"><span>信息填写</span></div>
+                        <p>恭喜少侠在本次创作活动中获得Q币奖励，请15日内（2025年10月07日23:59:59前）在下方提交您想要领取Q币奖励的Q币账号，确认提交后将无法进行更改，请少侠确认信息无误后再点击提交哦~</p>
+                        <div class="input-box">
+                           <span class="input-name">QQ账号：</span>
+                           <div class="input-box-item"><input id="text12_input" type="text" value="" placeholder="请输入QQ账号" class="ljtg_input"/></div>
                         </div>
-                        <p class="task_num"><em class="count">0</em>/3</p>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
-                    </li>
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">人气作品奖A档</p>
-                            <p class="task_txt2">100≤喜爱值≤499</p>
+                        <div class="dialog-btn-box">
+                           <div class="dialog-btn-1 fcbtn_qr1">确认提交</div>
+                           <div class="dialog-btn-2 dialog-btn-close">取消</div>
                         </div>
-                        <p class="task_num"><em class="count">0</em>/3</p>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
-                    </li>
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">人气作品奖S档</p>
-                            <p class="task_txt2">喜爱值≥500</p>
+                     </div>
+                  </div>
+                  <div class="area-box-wrap-ico-1"></div>
+                  <div class="area-box-wrap-ico-3"></div>
+                  <div class="area-box-wrap-ico-2"></div>
+                  <div class="area-box-wrap-ico-4"></div>
+               </div>
+               <div class="dialog-close">关闭</div>
+            </div>
+            <div class="dialog-mask"></div>
+         </div>
+         <!-- <div class="dialog-wrap" id="linkTgDialog">
+            <div class="dialog-cont">
+               <div class="area-box-wrap">
+                  <div class="area-box-cont">
+                     <div class="area-box-cont-inner">
+                        <div class="dialog-tit"><span>链接投稿</span></div>
+                        <p>请粘贴微博作品链接：</p>
+                        <div class="input-box input-box-2">
+                           <div class="input-box-item"><input></div>
                         </div>
-                        <p class="task_num"><em class="count">0</em>/3</p>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
-                    </li>
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">投票助力奖</p>
-                            <p class="task_txt2">成功投票≥15次</p>
+                        <div class="dialog-btn-box">
+                           <div class="dialog-btn-1">确认投稿</div>
+                           <div class="dialog-btn-2 dialog-btn-close">取消</div>
                         </div>
-                        <p class="task_num">投票次数<em class="user_vote_count">0</em>/15</p>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_vote_btns btn_lq sp gray">领取</a>
-                    </li>
-                    <li>
-                        <div class="task_info">
-                            <p class="task_txt1">投票助力奖</p>
-                            <p class="task_txt2">成功投票≥30次</p>
+                     </div>
+                  </div>
+                  <div class="area-box-wrap-ico-1"></div>
+                  <div class="area-box-wrap-ico-3"></div>
+                  <div class="area-box-wrap-ico-2"></div>
+                  <div class="area-box-wrap-ico-4"></div>
+               </div>
+               <div class="dialog-close">关闭</div>
+            </div>
+            <div class="dialog-mask"></div>
+         </div> -->
+          <div class="dialog-wrap" id="myWorksDialog"> 
+          <!-- <div class="dialog-wrap" id="pop_wdzp"> -->
+            <div class="dialog-cont">
+               <div class="area-box-wrap">
+                  <div class="area-box-cont">
+                     <div class="area-box-cont-inner">
+                        <div class="dialog-tit"><span>我的作品</span></div>
+
+                        <div class="my-works-list works">
+                           <div class="my-works-item">
+                              <div class="my-works-img"></div>
+                              <div class="my-works-info">
+                                 <p>作品编号:</p>
+                                 <p>投稿时间：X月X日</p>
+                                 <p>喜爱值：</p>
+                              </div>
+                              <div class="my-works-bottom">
+                                 <div class="my-works-status">审核中</div>
+                                 <div class="my-works-tools">
+                                    <div class="my-works-btn fxlp">分享拉票</div>
+                                    <div class="my-works-btn delet">删除</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="my-works-item">
+                              <div class="my-works-img"></div>
+                              <div class="my-works-info">
+                                 <p>作品编号:</p>
+                                 <p>投稿时间：X月X日</p>
+                                 <p>喜爱值：</p>
+                              </div>
+                              <div class="my-works-bottom">
+                                 <div class="my-works-status">审核中</div>
+                                 <div class="my-works-tools">
+                                    <div class="my-works-btn">分享拉票</div>
+                                    <div class="my-works-btn">删除</div>
+
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <p class="task_num">投票次数<em class="user_vote_count">0</em>/30</p>
-                        <!-- 添加gray为灰态 -->
-                        <a href="javascript:;" class="contribute_vote_btns btn_lq sp gray">领取</a>
-                    </li>
-                </ul>
-                <div class="jl_btn">
-                    <a href="javascript:TGDialogS('pop_ljjl');" id="getReceiveRecord" class="btn_lqjl sp db">领取记录</a>
-                    <a href="javascript:;" class="btn_txxx sp db btn_lq3">填写信息</a>
-                </div>
+                        <div class="area-box-wrap-ico-1"></div>
+                        <div class="area-box-wrap-ico-3"></div>
+                        <div class="area-box-wrap-ico-2"></div>
+                        <div class="area-box-wrap-ico-4"></div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- 我要投票 -->
-        <div class="con con5">
-            <div class="tp_box">
-                <ul class="tp_tips">
-                    <li>
-                        <em>1.</em>每位少侠在活动<span>【投票期】</span>内（2025年5月19日-2025年5月25日）<span>每天有5次投票机会</span>，单日不可重复投给同一作品；
-                    </li>
-                    <li><em>2.</em>少侠<span>请先登录并绑定游戏角色和微博账号</span>才可进行活动投票，为应援作品投出【喜爱值】；
-                    </li>
-                    <li>
-                        <em>3.</em><span>少侠投票次数满15次后可领取前往【奖励中心】领取【焕彩之砂*5】，满30票可领取【焕彩之砂*15】</span>，快给你喜爱的作品投出宝贵的一票吧~
-                    </li>
-                </ul>
-                <ul class="sort_list tab_select">
-                    <li class="tab cur" is_latest="true" is_hot="false">
-                        <em></em>
-                        <span>最新</span>
-                    </li>
-                    <li class="tab" is_latest="false" is_hot="true">
-                        <em></em>
-                        <span>最热</span>
-                    </li>
-                </ul>
-                <div class="search_box search_sec">
-                    <span>搜索作品：</span>
-                    <input type="text" value=""/>
-                    <a href="javascript:;" class="btn_lq sp btn_query">查询</a>
-                </div>
-                <ul class="zp_list vote_list">
-                    
-                </ul>
+         </div>
+         <div class="area-2 area-wrap" id="ruleArea">
+            <div class="main-cont-tit">
+               <p><span>微博创作计划活动详情规则</span></p>
             </div>
-            <div class="page_box vote_pager">
-                <!-- <a href="javascript:;" class="prevs sp"></a> -->
-                <div class="page_num pager_item">
-                    <span>1</span>
-                </div>
-                <!-- <a href="javascript:;" class="nexts sp"></a> -->
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner rule-detail-txt">
+                     <p class="font-db1010">一、活动名称</p>
+                     <p>天涯明月刀手游微博创作征集计划-绝代侠客在天涯主题</p>
+                     <p class="font-db1010 mt-15">二、活动简介</p>
+                     <p>本次活动由天涯明月刀手游项目组举办，旨在鼓励玩家创意，创作优秀的视图文和视频内容，共同建设天涯明月刀手游的精品内容生态。</p>
+                     <p class="font-db1010 mt-15">三、活动时间</p>
+                     <p>活动时间自2025年8月08日10:00:00起至2025年9月21 日23:59:59结束。</p>
+                     <p class="font-db1010 mt-15">四、权利声明</p>
+                     <p>腾讯是腾讯游戏的知识产权权利人。腾讯游戏（包括但不限于腾 讯游戏整体、游戏内所包含的所有美术、音乐、文字作品和其他 游戏构成要素、组成部分，以及腾讯游戏运行呈现的连续动态画
+                        面）的一切著作权、商标权、专利权、商业秘密等知识产权及其 他合法权益，以及与腾讯游戏相关的所有信息内容（包括文字、 图片、音频、视频、图表、界面设计、版面框架、有关数据或电
+                        子文档等）均受中华人民共和国法律法规和相应的国际条约保护， 腾讯享有上述知识产权和合法权益，但相关权利人依照法律规定 应享有的权利除外。未经腾讯事先书面同意，任何玩家不得以任
+                        何方式将腾讯游戏（包括但不限于腾讯游戏整体、游戏内所包含 的所有美术、音乐、文字作品和其他游戏构成要素、组成部分， 以及腾讯游戏运行呈现的连续动态画面）进行商业性使用或通过
+                        信息网络传播腾讯游戏版权内容。</p>
+                     <p class="font-db1010 mt-15">五、活动资格</p>
+                     <p>所有玩家（下称：投稿者）应具备以下全部资格：</p>
+                     <ol>
+                        <li>
+                           <span>（1）</span>
+                           <p>您应年满16周岁；</p>
+                        </li>
+                        <li>
+                           <span>（2）</span>
+                           <p>若您为不具备完全民事行为能力的未成年人，您应当在监护人的陪同下阅读本规则，并取得您监护人的同意；</p>
+                        </li>
+                        <li>
+                           <span>（3）</span>
+                           <p>您参与本活动的游戏账号应当有在本活动开启前，在《天涯明月刀手游》中的注册记录，且已经完成实名认证。</p>
+                        </li>
+                        <li>
+                           <span>（4）</span>
+                           <p>您应使用您本人注册登录的微博平台账号发布稿件参与投稿。</p>
+                        </li>
+                     </ol>
+                     <p class="font-db1010 mt-15">六、活动规则</p>
+                     <p>1.参与方式</p>
+                     <p>在活动有效期内，用户通过登录绑定天涯明月刀手游游戏账号后，在页面选择【我要投稿】，之后按照提示绑定有效的【微博账号】（单一游戏账号绑定单一微博账号）。在拉取到用户微博账号投稿数据后，用户可以选择其在微博发布过投稿内容进行投稿。用户也可以在活动页面提交链接投稿。投稿之后，根据稿件数据获得对应奖励。主办方承诺将对上述信息中所有涉及个人隐私的内容予以保密，但可能会为宣传推广比赛及营销活动等目的使用您的游戏昵称、头像、稿件等个人信息，包括但不限于在官方网站公示获奖者名单、对媒体披露获奖者的信息等行为。
+                     </p>
+                     <p>2.作品内容要求：</p>
+                     <ol>
+                        <li>
+                           <span>（1）</span>
+                           <p>您应保证投稿内容为其独立制作，并保证其提供的上述内容不侵犯任何第三方的合法权益（该权益包括但不限于著作权、商标权、形象权和名誉权等权益）。如果投稿内容存在或导致任何法律纠纷，将自动丧失参赛资格。主办方有权要求您随时提供投稿内容相关的所有权利证明，包括但不限于授权书、著作权登记证书以及商标注册证书等。
+                           </p>
+                        </li>
+                        <li>
+                           <span>（2）</span>
+                           <p>您应保证投稿内容中不含有：违反国家法律法规、危害国家安全统一、破坏社会稳定、违反公序良俗以及侮辱、诽谤、淫秽或含有任何性或性暗示的、暴力的内容；侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的内容；涉及他人隐私、个人信息或资料的内容；骚扰、广告信息及垃圾信息；境外电视台，境外制作公司的台标等logo；恶意虚构事实、隐瞒真相以误导、欺骗他人的内容；其他违反法律法规、政策及公序良俗、社会公德或侵犯其他用户或第三方合法权益内容的信息。
+                           </p>
+                        </li>
+                        <li>
+                           <span>（3）</span>
+                           <p>一旦发现投稿内容中含有前述内容，主办方有权不经通知随时删除上述内容。如因投稿内容违反本投稿规则相关要求，导致相关国家机关或机构提起诉讼、罚款或采取其他行政制裁措施或者导致任何第三方受到损害的，您应当承担全部责任；主办方或第三方因此遭受损失的，您也应一并赔偿。
+                           </p>
+                        </li>
+                        <li>
+                           <span>（4）</span>
+                           <p>我们特别提倡的作品:</p>
+                           <ol>
+                              <li>
+                                 <span>a.</span>
+                                 <p>围绕《天涯明月刀》手游，进行展开，立意明确，有个人观点;</p>
+                              </li>
+                           </ol>
+                        </li>
+                        <li>
+                           <span>（5）</span>
+                           <p>我们坚决不要的作品:</p>
+                           <ol>
+                              <li>
+                                 <span>a.</span>
+                                 <p>任何出现政治敏感、色情、赌博等违法违规内容的作品;</p>
+                              </li>
+                              <li>
+                                 <span>b.</span>
+                                 <p>AI合成、洗稿等形式生成的内容；</p>
+                              </li>
+                              <li>
+                                 <span>c.</span>
+                                 <p>任何含有低俗倾向、利用游戏功能影射或创作低俗内容的作品;</p>
+                              </li>
+                              <li>
+                                 <span>d.</span>
+                                 <p>任何含有拉踩、辱骂、恶意贬低、抹黑游戏的作品;</p>
+                              </li>
+                              <li>
+                                 <span>e.</span>
+                                 <p>任何包含未成年人不良价值观及不良行为诱导的作品，如:恐怖猎奇、血腥暴力、儿童邪典、外貌焦虑、画风引人不适等；包括福利擦边向的内容；</p>
+                              </li>
+                              <li>
+                                 <span>f.</span>
+                                 <p>任何带营销属性的作品(与本活动无关)，不利展示和发放、其他游戏平台的宣导等;</p>
+                              </li>
+                              <li>
+                                 <span>g.</span>
+                                 <p>任何抄袭搬运的作品;</p>
+                              </li>
+                              <li>
+                                 <span>h.</span>
+                                 <p>任何恶意骗赞、诱导评论转发互动等数据作假的作品;</p>
+                              </li>
+                              <li>
+                                 <span>i.</span>
+                                 <p>存在较大质量问题的作品，如:黑屏、画面卡顿、画质模糊、口播不清晰、音频不完整、直接搬运官方素材、原创度低、无主题纯录屏。</p>
+                              </li>
+                           </ol>
+                        </li>
+                     </ol>
+                     <p class="mt-15">3.知识产权条款</p>
+                     <ol>
+                        <li>
+                           <span>（1）</span>
+                           <p>投稿内容一经提交，即代表您同意并授权腾讯公司有权直接实施以下行为而无需事先与您协商或取得您同意：自行或授权（包括授予第三方转授权或分许可的权利）其他任何第三方以任何方式行使投稿内容涉及的著作权及邻接权、商标权及其他知识产权或以任何方式使用该投稿内容（前述“使用”包括但不限于复制、发行、出租、展览、表演、广播、修改、改编、信息网络传播及其他方式使用，同时包括商业目的和非商业目的使用）。
+                           </p>
+                        </li>
+                     </ol>
+                     <p class="mb-10 mt-15">4.奖项设置：</p>
+                     <table cellpadding="0" cellspacing="0" border="1" align="center">
+                        <tr>
+                           <th width="20%">奖项名称</th>
+                           <th width="25%">奖励内容</th>
+                           <th width="20%">发奖方式</th>
+                           <th width="15%">奖品数量</th>
+                           <th width="20%">奖励要求</th>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">投稿必得</td>
+                           <td>限定头像框- 织心裁意(30天)*1</td>
+                           <td rowspan="2">游戏内 邮件发放</td>
+                           <td rowspan="2">1000000</td>
+                           <td rowspan="2">参与活动且 过审稿件≥1条</td>
+                        </tr>
+                        <tr>
+                           <td>限定头顶图标-织 心裁意(30天)*1</td>
+                        </tr>
+                        <tr>
+                           <td>投票助力奖<br>-第一档</td>
+                           <td>焕彩之砂*5</td>
+                           <td>游戏内 邮件发放</td>
+                           <td>1000000</td>
+                           <td>投票期期间【微 博赛道】参与作 品投票，且 投票次数 ≥5次</td>
+                        </tr>
+                        <tr>
+                           <td>投票助力奖<br>-第二档</td>
+                           <td>焕彩之砂*10</td>
+                           <td>游戏内 邮件发放</td>
+                           <td>1000000</td>
+                           <td>投票期期间【微 博赛道】参与作 品投票，且投 票次数 ≥15次</td>
+                        </tr>
+                        <tr>
+                           <td>投票助力奖<br>-第三档</td>
+                           <td>焕彩之砂*15</td>
+                           <td>游戏内 邮件发放</td>
+                           <td>1000000</td>
+                           <td>投票期期间【微 博赛道】参与作 品投票，且投 票次数 ≥30次</td>
+                        </tr>
+                        <tr>
+                           <td>群侠人气奖 -C档</td>
+                           <td>限定聊天气泡-织 心裁意(30天)*1</td>
+                           <td>游戏内 邮件发放</td>
+                           <td>1000000</td>
+                           <td>单条作品累计 喜爱值达到 5</td>
+                        </tr>
+                        <tr>
+                           <td>群侠传播奖 -B档</td>
+                           <td>天衣礼券*5</td>
+                           <td>游戏内 邮件发放</td>
+                           <td>1000000</td>
+                           <td>单条作品累计 喜爱值达到30</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">群侠传播奖 -A档</td>
+                           <td>天衣礼券*10</td>
+                           <td rowspan="2">游戏内 邮件发放</td>
+                           <td rowspan="2">1000000</td>
+                           <td rowspan="2">单条作品累计 喜爱值达到100</td>
+                        </tr>
+                        <tr>
+                           <td>随心染匣*5</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">群侠传播奖 -S档</td>
+                           <td>天衣礼券*20</td>
+                           <td rowspan="2">游戏内 邮件发放</td>
+                           <td rowspan="2">1000000</td>
+                           <td rowspan="2">单条作品累计 喜爱值达到500</td>
+                        </tr>
+                        <tr>
+                           <td>随心染匣*10</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="3">名气排行奖- TOP1-3</td>
+                           <td>月灵石*1666</td>
+                           <td rowspan="3">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="3">3</td>
+                           <td rowspan="10">根据单条作品 在【公示期】 9月16日0点0 分进行最终 【喜爱值】排行 （取排名高值） 并通过人工 审核</td>
+                        </tr>
+                        <tr>
+                           <td>限定头顶图标-同人 之星*1</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*288</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="3">名气排行奖- TOP4-10</td>
+                           <td>月灵石*888</td>
+                           <td rowspan="3">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="3">7</td>
+                        </tr>
+                        <tr>
+                           <td>限定头顶图标-同人 之星*1</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*166</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">名气排行奖- TOP11-20</td>
+                           <td>月灵石*520</td>
+                           <td rowspan="2">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="2">10</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*100</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">名气排行奖- TOP21-30</td>
+                           <td>月灵石*388</td>
+                           <td rowspan="2">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="2">10</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*66</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="4">绝代侠客奖- TOP1</td>
+                           <td>月灵石*3000</td>
+                           <td rowspan="4">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="4">1</td>
+                           <td rowspan="15">活动投稿结束 后，将根据过 审稿件内容的 质量、热度以 及创意等综合 维度进行人工 审核并排名 公示</td>
+                        </tr>
+                        <tr>
+                           <td>限定头顶图标-同人 之星*1</td>
+                        </tr>
+                        <tr>
+                           <td>限定头像框-同人之 星·金(90天)*1</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*666</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="4">绝代侠客奖- TOP2-3</td>
+                           <td>月灵石*1888</td>
+                           <td rowspan="4">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="4">2</td>
+                        </tr>
+                        <tr>
+                           <td>限定头顶图标-同人 之星*1</td>
+                        </tr>
+                        <tr>
+                           <td>限定头像框-同人之 星·银(90天)*1</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*300</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="4">绝代侠客奖- TOP4-10</td>
+                           <td>月灵石*1888</td>
+                           <td rowspan="4">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="4">7</td>
+                        </tr>
+                        <tr>
+                           <td>限定头顶图标-同人 之星*1</td>
+                        </tr>
+                        <tr>
+                           <td>限定头像框-同人之 星·铜(90天)*1</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*300</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="3">绝代侠客奖- TOP11-20</td>
+                           <td>月灵石*888</td>
+                           <td rowspan="3">1.道具奖励 游戏内邮件 发放 2.Q币登录信 息后30个工 作日内发放</td>
+                           <td rowspan="3">10</td>
+                        </tr>
+                        <tr>
+                           <td>限定头像框-同人之 星·铜(90天)*1</td>
+                        </tr>
+                        <tr>
+                           <td>Q币*100</td>
+                        </tr>
+                     </table>
+                     <p>5.活动安排：</p>
+                     <p>投稿排名结果将在结果公示期对应页面展示。</p>
+                     <p class="mt-15">6.奖品兑换与发放：</p>
+                     <ol>
+                        <li>
+                           <span>（1）</span>
+                           <p>游戏道具将通过游戏内邮箱发放，领取后会即时到账（视网络情况会存在短暂延迟）；</p>
+                        </li>
+                        <li>
+                           <span>（2）</span>
+                           <p>Q币奖励将通过页面填写对应账号确认领奖信息后发放；请留意结果公示期中的填写页面，即时进行兑奖。兑换成功后15个工作日内将发放奖励；</p>
+                        </li>
+                        <li>
+                           <span>（3）</span>
+                           <p>结果公示期会在活动结束后15个工作日内，若因个人原因在2025年10月07日23:59前主办方无法联系进行兑奖，将默认您放弃对应奖励。</p>
+                        </li>
+                     </ol>
+                     <p class="font-db1010 mt-15">七、参与资格、获奖资格的取消</p>
+                     <p>您若有下列任何一种行为或情况的，腾讯有权单方面取消您的参与资格、获奖资格等：</p>
+                     <ol>
+                        <li></li>
+                        <li>
+                           <span>（2）</span>
+                           <p>提供虚假信息的；</p>
+                        </li>
+                        <li>
+                           <span>（3）</span>
+                           <p>虚假交易或恶意破坏活动的；</p>
+                        </li>
+                        <li>
+                           <span>（4）</span>
+                           <p>以任何机器人软件、蜘蛛软件、爬虫软件、刷奖软件或其它任何自动方式、不正当手段等参与本活动的；</p>
+                        </li>
+                        <li>
+                           <span>（5）</span>
+                           <p>有任何违反诚实信用、公序良俗、公平、公正等原则行为的；</p>
+                        </li>
+                        <li>
+                           <span>（6）</span>
+                           <p>其他违反相关法规、本规则行为的。</p>
+                        </li>
+                     </ol>
+                     <p class="font-db1010 mt-15">八、免责条款</p>
+                     <ol>
+                        <li>
+                           <span>1.</span>
+                           <p>您知悉互联网存在诸多不确定性因素，因此理解并同意，如因不可抗力、网络、通讯线路故障、计算机大规模瘫痪及活动中存在大面积作弊行为等非腾讯原因致使本活动出现异常情况或难以继续开展的，腾讯有权采取包括但不限于通过各种方式消除异常情况或调整、暂停、取消本活动等措施，因此造成用户损失的，腾讯不承担任何责任。
+                           </p>
+                        </li>
+                        <li>
+                           <span>2.</span>
+                           <p>您应关注本活动规则有关时间的约定，如因非腾讯原因导致您在本规则约定时间内未参与活动、兑换奖品或领取奖品，则视为您放弃参与活动或放弃领奖，全部损失由您自行承担，腾讯不会给予您任何形式的补偿。
+                           </p>
+                        </li>
+                        <li>
+                           <span>3.</span>
+                           <p>您应按照腾讯要求如实提供您联系地址等信息，如由于您提供的信息不真实不完整等导致奖品无法发放或发放错误等一切后果，由您自行承担。</p>
+                        </li>
+                     </ol>
+                     <p class="font-db1010 mt-15">九、管辖条款</p>
+                     <ol>
+                        <li>
+                           <span>1.</span>
+                           <p>本规则签订地为中华人民共和国广东省深圳市南山区。</p>
+                        </li>
+                        <li>
+                           <span>2.</span>
+                           <p>本规则的成立、生效、履行、解释及纠纷解决等相关事宜，均适用中华人民共和国大陆地区法律（不包括冲突法）。</p>
+                        </li>
+                        <li>
+                           <span>3.</span>
+                           <p>若您和腾讯之间发生任何纠纷或争议，首先应友好协商解决；协商不成的，您同意将纠纷或争议提交本规则签订地有管辖权的人民法院管辖。</p>
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
             </div>
-        </div>
-    </div>
-    <!-- 底部按钮 -->
-    <div class="bottom_btn">
-        <a href="javascript:;" class="btn_wb db">微博赛道</a>
-        <a href="javascript:;" onclick="location.href='indexbz.html'" class="btn_bz db">B站赛道</a>
-    </div>
-</div>
+         </div>
+      </div>
+      <div class="bg-box">
+         <div class="bg-1"></div>
+      </div>
 
-<!-- 视频弹窗 -->
-<div class="pop_box pop_box2" id="pop_vid" style="display:none;">
-    <div id="video_container" class="video"></div>
-    <a href="javascript:closeVideo();" class="pop_close sp pa" title="关闭"></a>
-</div>
+      <div class="bottom-link-box active" id="bottomBox1">
+         <a href="indexbz.html" class="b-btn-1">B站赛道</a>
+         <a href="index.html" class="b-btn-2">微博赛道</a>
+      </div>
+      <div class="bottom-link-box" id="bottomBox2">
+         <a href="javascript:;" class="b-btn-1" id="leaveRuleBtn">返回首页</a>
+         <a href="indexbz.html" class="b-btn-2">B站赛道</a>
+      </div>
 
 
-<!-- 绑定角色弹窗 -->
-<div class="pop_box" id="pop_bind" style="display:none;">
-    <div class="pop_content pop1">
-        <div>
-            <p class="pop_tips">亲爱的少侠，<span>请确认是否以此游戏角色参与本次活动，一经点击【确认】后将无法更改</span>，请悉知
-            </p>
-            <div id="roleSelector">
-                <ul class="bd_input">
-                    <li>
-                        <div class="sel_cn" id="area">
+      <div class="dialog-wrap" id="msgDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner">
+                     <div class="msg-box" id="msgContTxt">请少侠绑定游戏角色</div>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1">确认</div>
+                        <div class="dialog-btn-2 dialog-btn-close">确认</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="shareDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner">
+                     <div class="dialog-tit"><span>分享拉票赢喜爱值</span></div>
+                     <div class="share-info-txt">嗨我的盆友，我正在参加【天涯明月刀手游赛季版-绝代侠客在天涯微博创作征集计划活动】，我的作品编号是：66666
+                        你一票我一票，助力少侠我今天就成为江湖顶级侠客，赢月灵石和Q币大奖吧！</div>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1">确认分享</div>
+                        <div class="dialog-btn-2 dialog-btn-close">取消</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="inputDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner">
+                     <div class="dialog-tit"><span>信息填写</span></div>
+                     <p>恭喜少侠在本次创作活动中获得Q币奖励，请15日内（2025年10月07日23:59:59前）在下方提交您想要领取Q币奖励的Q币账号，确认提交后将无法进行更改，请少侠确认信息无误后再点击提交哦~
+                     </p>
+                     <div class="input-box">
+                        <span class="input-name">QQ账号：</span>
+                        <div class="input-box-item"><input></div>
+                     </div>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1">确认提交</div>
+                        <div class="dialog-btn-2 dialog-btn-close">取消</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="linkTgDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner">
+                     <div class="dialog-tit"><span>链接投稿</span></div>
+                     <p>请粘贴微博作品链接：</p>
+                     <div class="input-box input-box-2">
+                        <div class="input-box-item">
+                          <input type="text" value="" placeholder="请输入微博作品链接" class="ljtg_input"/>
                         </div>
-                    </li>
-                    <li>
-                        <div class="sel_cn" id="plat">
+                     </div>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1 fcbtn_qr3">确认投稿</div>
+                        <div class="dialog-btn-2 dialog-btn-close">取消</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="myWorksDialog">
+         <!-- <div class="dialog-wrap" id="pop_wdzp"> -->
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner">
+                     <div class="dialog-tit"><span>我的作品</span></div>
+
+                     <div class="my-works-list works">
+                        <div class="my-works-item">
+                           <div class="my-works-img"></div>
+                           <div class="my-works-info">
+                              <p>作品编号:</p>
+                              <p>投稿时间：X月X日</p>
+                              <p>喜爱值：</p>
+                           </div>
+                           <div class="my-works-bottom">
+                              <div class="my-works-status">审核中</div>
+                              <div class="my-works-tools">
+                                 <div class="my-works-btn fxlp">分享拉票</div>
+                                 <div class="my-works-btn delet">删除</div>
+                              </div>
+                           </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="sel_cn" id="partition">
+                        <div class="my-works-item">
+                           <div class="my-works-img"></div>
+                           <div class="my-works-info">
+                              <p>作品编号:</p>
+                              <p>投稿时间：X月X日</p>
+                              <p>喜爱值：</p>
+                           </div>
+                           <div class="my-works-bottom">
+                              <div class="my-works-status">审核中</div>
+                              <div class="my-works-tools">
+                                 <div class="my-works-btn">分享拉票</div>
+                                 <div class="my-works-btn">删除</div>
+                              </div>
+                           </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="sel_cn" id="role">
+                     </div>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1">继续投稿</div>
+                        <div class="dialog-btn-2 dialog-btn-close">取消</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="tgDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner tg-works-list-wrap">
+                     <div class="dialog-tit"><span>投稿作品</span></div>
+                     <p class="ac-tc">勾选以下想要投递的作品</p>
+                     <div class="tg_list tg-works-list">
+                        <div class="tg-works-item">
+                           <div class="tg-works-img"></div>
+                           <div class="tg-works-name">作品:</div>
+                           <div class="tg-works-select"></div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp fcbtn_qr1">确认</a>
-                <a href="javascript:closeDialog();" class="pbtn2 sp">取消</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-
-<!-- 投稿作品弹窗 -->
-<div class="pop_box" id="pop_tg" style="display:none;">
-    <div class="pop_content pop3">
-        <div>
-            <div class="pop_tit">
-                <i></i><span>投稿作品</span><i></i>
-            </div>
-            <div class="works">
-                <p class="pop_tips">勾选以下想要投递的作品</p>
-                <ul class="tg_list">
-                    <!-- cur为选中 -->
-                    <li>
-                        <div class="tg_img">
-                            <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/zp_img.jpg" alt=""/>
-                            <a href="javascript:;" class="btn_plays sp"></a>
+                        <div class="tg-works-item">
+                           <div class="tg-works-img"></div>
+                           <div class="tg-works-name">作品:</div>
+                           <div class="tg-works-select active"></div>
                         </div>
-                        <p class="tg_name">作品:</p>
-                        <em class="cur_icon sp"></em>
-                    </li>
-                    <li>
-                        <div class="tg_img">
-                            <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/zp_img.jpg" alt=""/>
+                     </div>
+                     <p class="ac-tc tg-works-info-tip">本页仅拉取少侠所绑定微博主页的稿件（最新五条），如未显示或未发布至个人主页，请使用下方【链接投稿】。</p>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1 fcbtn_qr2">确认投稿</div>
+                        <div class="dialog-btn-2 dialog-btn-close js-btn" data-id="linkTg" data-type="dialog">链接投稿</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="bindRoleDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner">
+                     <p class="bind-tip">亲爱的少侠，<span>请确认是否以此游戏角色参与本次活动，一经点击【确认】后将无法更改</span>，请悉知</p>
+                     <div id="roleSelector">
+                        <ul class="bd_input">
+                           <li>
+                              <div class="sel_cn" id="area"></div>
+                           </li>
+                           <li>
+                              <div class="sel_cn" id="plat"></div>
+                           </li>
+                           <li>
+                              <div class="sel_cn" id="partition"></div>
+                           </li>
+                           <li>
+                              <div class="sel_cn" id="role"></div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="dialog-btn-box">
+                        <div class="dialog-btn-1 fcbtn_qr1">确认</div>
+                        <div class="dialog-btn-2 dialog-btn-close">取消</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
+            </div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="recordDialog">
+         <div class="dialog-cont">
+            <div class="area-box-wrap">
+               <div class="area-box-cont">
+                  <div class="area-box-cont-inner pb-0">
+                     <div class="dialog-tit"><span>领奖记录</span></div>
+                     <div class="record-list fc_box6">
+                        <div class="record-list-item">
+                           <div class="record-list-item-img"><span class="ico-1"></span></div>
+                           <div class="record-list-item-info">
+                              <div>织心裁意头像框&头顶图标*1</div>
+                              <p>获得时间：2025-04-01 14:51:20</p>
+                              <p>奖励通过游戏邮件发放至绑定角色</p>
+                           </div>
                         </div>
-                        <p class="tg_name">作品:</p>
-                        <em class="cur_icon sp"></em>
-                    </li>
-                </ul>
-                <p class="pop_tips">本页仅拉取少侠所绑定微博主页的稿件（<span>最新五条</span>），如未显示或未发布至个人主页，请使用下方<span>【链接投稿】</span>。
-                </p>
-            </div>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp fcbtn_qr2">确认投稿</a>
-                <a href="javascript:TGDialogS('pop_ljtg');" class="pbtn2 sp">链接投稿</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-
-<!-- 我的作品弹窗 -->
-<div class="pop_box" id="pop_wdzp" style="display:none;">
-    <div class="pop_content pop2">
-        <div>
-            <div class="pop_tit">
-                <i></i><span>我的作品</span><i></i>
-            </div>
-            <ul class="wdzp_list works">
-                <li>
-                    <div class="wdzp_top">
-                        <div class="tg_img">
-                            <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/zp_img.jpg" alt=""/>
+                        <div class="record-list-item">
+                           <div class="record-list-item-img"><span class="ico-1"></span></div>
+                           <div class="record-list-item-info">
+                              <div>织心裁意头像框&头顶图标*1</div>
+                              <p>获得时间：2025-04-01 14:51:20</p>
+                              <p>奖励通过游戏邮件发放至绑定角色</p>
+                           </div>
                         </div>
-                        <div class="tg_name">
-                            <p>作品编号:</p>
-                            <p>投稿时间：X月X日</p>
-                            <p>喜爱值：</p>
-                        </div>
-                    </div>
-                    <div class="wdzp_bottom">
-                        <p class="sh_state state1">审核中</p>
-                        <a href="javascript:;" class="btn_wdzp fxlp sp">分享拉票</a>
-                        <a href="javascript:;" class="btn_wdzp delet sp">删除</a>
-                    </div>
-                </li>
-                
-            </ul>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp fcbtn_t1">继续投稿</a>
-                <a href="javascript:closeDialog();" class="pbtn2 sp">取消</a>
+                     </div>
+                     <div class="record-list-pager">
+                        <div class="record-list-pager-btn record-list-pager-btn-prev"></div>
+                        <span>1</span>
+                        <div class="record-list-pager-btn record-list-pager-btn-next"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="area-box-wrap-ico-1"></div>
+               <div class="area-box-wrap-ico-3"></div>
+               <div class="area-box-wrap-ico-2"></div>
+               <div class="area-box-wrap-ico-4"></div>
             </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+      <div class="dialog-wrap" id="videoDialog">
+         <div class="dialog-cont dialog-cont-vid">
+            <div id="pop_videos1"></div>
+            <div class="dialog-close">关闭</div>
+         </div>
+         <div class="dialog-mask"></div>
+      </div>
+   </div>
+   <script src="//ossweb-img.qq.com/images/cf/script/jquery-1.9.1.min.js"></script>
+   <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+   <script src="//game.gtimg.cn/images/js/milo-next/latest/milo.js"></script>
+   <script src="//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+   <script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+   <script src="https://game.gtimg.cn/images/lv/vconsole.min.js"></script>
+   <script>
+      new VConsole();
+   </script>
 
-<!-- 链接投稿弹窗 -->
-<div class="pop_box" id="pop_ljtg" style="display:none;">
-    <div class="pop_content pop5">
-        <div>
-            <div class="pop_tit">
-                <i></i><span>链接投稿</span><i></i>
-            </div>
-            <p class="pop_tips">请粘贴微博作品链接：</p>
-            <input type="text" value="" placeholder="请输入微博作品链接" class="ljtg_input"/>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp fcbtn_qr3">确认投稿</a>
-                <a href="javascript:;" class="pbtn2 sp">取消</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
+   <script src="//game.gtimg.cn/images/js/milo-next/latest/milo.js"></script>
 
-<!-- 信息填写弹窗 -->
-<div class="pop_box" id="pop_txxx" style="display:none;">
-    <div class="pop_content pop6">
-        <div>
-            <div class="pop_tit">
-                <i></i><span>信息填写</span><i></i>
-            </div>
-            <p class="pop_tips">
-                恭喜少侠在本次创作活动中获得Q币奖励，<span>请15日内（2025年6月15日23:59:59前）</span>在下方提交您想要领取Q币奖励的Q币账号，<span>确认提交后将无法进行更改</span>，请少侠确认信息无误后再点击提交哦~
-            </p>
-            <div class="tx_input">
-                <span>QQ账号：</span>
-                <input id="text12_input" type="text" value="" placeholder="请输入QQ账号" class="ljtg_input"/>
-            </div>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp fcbtn_qr1">确认提交</a>
-                <a href="javascript:closeDialog();" class="pbtn2 sp">取消</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
 
-<!-- 分享拉票弹窗 -->
-<div class="pop_box" id="pop_fxlp" style="display:none;">
-    <div class="pop_content pop6">
-        <div>
-            <div class="pop_tit">
-                <i></i><span>分享拉票赢喜爱值</span><i></i>
-            </div>
-            <!-- 如需可编辑 删除readonly属性即可 -->
-            <textarea class="fx_textarea"
-                      readonly="readonly">嗨我的盆友，我正在参加【天涯明月刀手游赛季版-江湖归处是桃源微博创作征集计划活动】，我的作品编号是：66666你一票我一票，助力少侠我今天就成为江湖种田糕手，赢月灵石和Q币大奖吧！</textarea>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认分享</a>
-                <a href="javascript:;" class="pbtn2 sp">取消</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
+   <script src="/act/a20250714czz/index.js"></script>
 
-<!-- 领奖记录弹窗 -->
-<div class="pop_box" id="pop_ljjl" style="display:none;">
-    <div class="pop_content pop3">
-        <div>
-            <div class="pop_tit">
-                <i></i><span>领奖记录</span><i></i>
-            </div>
-            <a href="javascript:;" class="btn_txxx sp db btn_lq3">填写信息</a>
-            <div class="lj_box">
-                <div class="lj_tips" style="display:none;">暂无记录</div>
-                <ul class="lj_list fc_box6">
-                    
-                </ul>
-            </div>
-            <!-- <div class="page_box">
-                <a href="javascript:;" class="prevs sp"></a>
-                <div class="page_num">
-                    <span>1</span>
-                </div>
-                <a href="javascript:;" class="nexts sp"></a>
-            </div> -->
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-
-<!-- 提示弹窗S -->
-<div class="pop_box" id="pop_ts1" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">请少侠绑定游戏角色</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts2" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">少侠暂无可领取的奖励哦，请先完成活动任务哦~</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts3" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">少侠暂无领奖记录哦，快去完成活动任务领取奖励吧~</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts4" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">没有找到您在江湖的信息，请先前往游戏创建角色</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts5" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">即将跳转微博首页分享</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts6" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">即将跳转微博首页，确认账号授权</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts7" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">微博链接错误，请少侠重新输入~</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts8" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">少侠还未绑定微博账号，请先前往授权绑定微博账号</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts9" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">授权失败，一个微博账号只能给一个游戏账号授权</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts10" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">非常抱歉，此时不在该活动开放时间段！</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts11" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">已过了领奖时间，无法继续领奖</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts12" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">非常抱歉，此时不在该活动【投稿期】时间段！</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts13" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">信息确认提交后将无法更改，请确认无误后再进行提交！</p>
-            <div class="pop_btn">
-                <a href="javascript:;" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<div class="pop_box" id="pop_ts14" style="display:none;">
-    <div class="pop_content pop4">
-        <div>
-            <p class="pop_tips">今日投票次数已达上限，请少侠明天再来吧！</p>
-            <div class="pop_btn">
-                <a href="javascript:closeDialog();" class="pbtn1 sp">确认</a>
-            </div>
-        </div>
-        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
-    </div>
-</div>
-<!-- 提示弹窗E -->
-
-<!-- swiper -->
-<script src="//game.gtimg.cn/images/js/jquery/jquery-1.12.4.min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
-<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
-<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
-<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
-<script src="//game.gtimg.cn/images/js/milo-next/latest/milo.js"></script>
-
-<!-- <script src="js/swiper-bundle.min.js"></script> -->
-<script src="js/plug250210.js"></script>
-<!-- <script src="js/plug241224.js"></script> -->
-<script src="js/config.js"></script>
-<script src="js/common.js"></script>
-<script src="js/index.js"></script>
-
-<script type="text/javascript">
-    // 点击排序切换
-    $(".sort_list li").on("click", function () {
-        $(this).addClass("cur").siblings().removeClass("cur");
-    })
-
-    // 点击勾选
-    // $(".tg_list li").on("click", function () {
-    //     $(this).toggleClass("cur");
-    // })
-
-    // 显示某tab
-    showTab(0)
-
-    function showTab(n) {
-        $(".tab_list a").eq(n).addClass("cur").siblings().removeClass("cur");
-        $(".con").eq(n).show().siblings().hide();
-    }
-
-    //图片轮播
-    var swiper1 = new Swiper('.tg_lb1 .swiper-container', {
-        loop: true,
-        autoplay: 2500,
-        pagination: '.tg_lb1 .pagination',
-        nextButton: '.tg_lb1 .next',
-        prevButton: '.tg_lb1 .prev',
-        observer: true,
-        observeParents: true
-    });
-
-    //视频轮播
-    var swiper2 = new Swiper('.tg_lb2 .swiper-container', {
-        loop: true,
-        autoplay: 2500,
-        pagination: '.tg_lb2 .pagination',
-        nextButton: '.tg_lb2 .next',
-        prevButton: '.tg_lb2 .prev',
-        observer: true,
-        observeParents: true
-    });
-
-    //ios端解决点击select页面上移的问题
-    var stops;
-    $('select,input').on('focus', function () {
-        stops = $(window).scrollTop();
-    })
-    $('select,input').on('blur', function () {
-        $(window).scrollTop(stops);
-    })
-
-    //弹窗
-    var mo = function (e) {
-        e.preventDefault();
-    };
-
-    function stop() {
-        document.body.style.overflow = 'hidden';
-        document.addEventListener("touchmove", mo, {passive: false});//禁止页面滑动
-    }
-
-    function move() {
-        document.body.style.overflow = '';//出现滚动条
-        document.removeEventListener("touchmove", mo, {passive: false});
-    }
-
-    
-
-    // 视频
-    var player;
-
-    function popVideo(vid) {
-        if (!vid) {
-            // alert("敬请期待111111！")
-        } else {
-            TGDialogS('pop_vid')
-            player = new Txplayer({
-                containerId: 'video_container',
-                vid: vid,
-                width: '100%',
-                height: '100%',
-                autoplay: true
-            });
-        }
-    }
-
-    function closeVideo() {
-        player.pause();
-        closeDialog();
-        $("#video_container").html("")
-    }
-
-    // 点击播放视频
-//  $(".btn_play,.btn_plays").on("click", function () {
-//      popVideo("")
-//  })
-</script>
+   <script src="js/plug250210.js"></script>
+<script>document.write('<script src="js/config.js?t=' + Date.now() + '"><\/script>');</script>
+<script>document.write('<script src="js/common.js?t=' + Date.now() + '"><\/script>');</script>
+<script>document.write('<script src="js/index.js?t=' + Date.now() + '"><\/script>');</script>
 </body>
 
 </html>
