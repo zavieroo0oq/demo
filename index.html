@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="Description"
+          content="《天涯明月刀》古龙正版授权，端游核心团队打造的国风大世界MMORPG手游。行业领先的美术技术，数十个可攻略NPC，更可逆天改命，体验指尖上的平行宇宙！你心动的每一刻，就是天涯。"/>
+    <meta name="Keywords"
+          content="天涯明月刀手游，天刀手游，腾讯,腾讯游戏,天涯明月刀,天刀,手游,天刀手游,天涯明月刀ol,腾讯手游,国风手游,捏脸,武侠,武侠游戏,开放世界,古龙,古龙改编,古龙游戏,游戏下载"/>
+    <!-- 设计：cp  | 重构：cp | 创建：2025/04/14 | 更新：| 团队博客：http://tgideas.qq.com/ -->
+    <title>江湖归处是桃源</title>
+    <link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script>
+        //屏幕适应
+        (function (win, doc) {
+            if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+                handleFontSize();
+            } else {
+                if (document.addEventListener) {
+                    document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+                } else if (document.attachEvent) {
+                    document.attachEvent("WeixinJSBridgeReady", handleFontSize);
+                    document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
+                }
+            }
+
+            function handleFontSize() {
+                // 设置网页字体为默认大小
+                WeixinJSBridge.invoke('setFontSizeCallback', {'fontSize': 0});
+                // 重写设置网页字体大小的事件
+                WeixinJSBridge.on('menu:setfont', function () {
+                    WeixinJSBridge.invoke('setFontSizeCallback', {'fontSize': 0});
+                });
+            }
+
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var html = document.documentElement;
+                var k = 750;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+        })(window, document);
+    </script>
+</head>
+
+<body>
+<!-- 内容  -->
+<div class="wrap">
+    <h1 class="hide">江湖归处是桃源</h1>
+    <!-- 通用tab、登录及标题 -->
+    <div class="hd_info">
+        <div class="login_box login">
+            <!-- 登录前 -->
+            <div id="unlogin" class="login_before">
+                你好，请登录 
+                <a id="qqLogin" href="javascript:qqLogin();">【QQ登录】</a> 
+                <a id="wxLogin" href="javascript:wxLogin();">【微信登录】</a>
+            </div>
+            <!-- 登录后 -->
+            <!-- <div class="login_after" style="display: none;">
+                欢迎您，玩家昵称 <a href="javascript:TGDialogS('pop_bind');">【绑定角色】</a> <a href="javascript:;">【注销】</a>
+            </div> -->
+            <div id="logined" style="display: none;">
+                <span>欢迎您，</span>
+                <span id="userinfo">--</span>
+                <a id="bindBtn" href="javascript:TGDialogS('pop_bind');">【绑定角色】</a>
+                <a id="logoutBtn" href="javascript:loginOut();" style="cursor: pointer;">【注销】</a>
+            </div>
+        </div>
+        <div class="tit_box"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/tit.png" alt=""/></div>
+        <div class="tab_list">
+            <a href="javascript:showTab(0);" class="sp">活动详情</a>
+            <a href="javascript:showTab(1);" class="sp btn_tz0">我要投稿</a>
+            <a href="javascript:showTab(2);" class="sp btn_tz1" style="display:none;">活动公示</a>
+            <a href="javascript:showTab(3);" class="sp">奖励中心</a>
+            <a href="javascript:showTab(4);" class="sp">我要投票</a>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+        <!-- 活动详情 -->
+        <div class="con con1">
+            <div class="xq_box1"></div>
+            <!-- 活动玩法 -->
+            <div class="xq_box2">
+                <p class="xq_txt">
+                    报告少侠萝，是时候前往桃源种田了！<br/>
+                    天衣阁织梦师特别计划——<span>微博创作专区</span>登场，快跟随刀妹和<br/>萝萝的脚步，来微博<span>天涯明月刀手游超话</span>带<span>#天刀手游新赛季启明#</span>+<span>#江湖归处是桃源#</span>+<span>#桃源天刀联动#</span>三大活动话题，<br/>分享你的<span>染色穿搭、塑形</span>和<span>江湖美照录屏</span>等原创作品，<br/>让<span>桃源“田园风”</span>穿搭席卷江湖！<br/>
+                    成功参与活动投稿不仅<span>必得“织心裁意”限定头像框和<br/>头顶图标</span>，还能赢取刀妹准备的海量<br/>月灵石和万元Q币豪礼哦！
+                </p>
+            </div>
+            <!-- 活动时间 -->
+            <div class="xq_box3"></div>
+            <!-- 活动奖励 -->
+            <div class="xq_box4">
+                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg4.jpg" alt=""/>
+                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg5.jpg" alt=""/>
+                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg6.jpg" alt=""/>
+                <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/index_bg7.jpg" alt=""/>
+            </div>
+            <!-- 活动规则 -->
+            <div class="xq_box5">
+                <ul class="rule_list">
+                    <li><em>1.</em>本次活动的参赛作品需在2025年4月25日10:00:00-2025年5月18日23:59:59【投稿期】内，按照指定格式成功发布天涯明月刀手游赛季版相关内容即视为成功参与，单个作品仅可在多平台参与一次活动；
+                    </li>
+                    <li><em>2.</em>本次活动的参赛作品须按照相关活动规则读取至活动页面内，不符合活动投稿范圈和主题要求的作品将不计入评选范围；
+                    </li>
+                    <li><em>3.</em>本次活动的参赛作品均需要经审核后方可视为成功投稿，预计在48小时左右完成，请少侠耐心等待；
+                    </li>
+                    <li><em>4.</em>本次活动的参赛作品需内容积极健康，禁止发布一切涉及色情血腥、暴力以及违反国家法律法规、带有任何扭曲历史，丑化贬低中华民族精神及人性的内容，一经发现将取消参赛资格；
+                    </li>
+                    <li><em>5.</em>本次活动的参赛选手对参赛作品的版权、著作权以及肖像权负法律责任，不得盗用、剽窃和抄袭他人作品；
+                    </li>
+                    <li><em>6.</em>如发现他人的作品内容涉嫌抄袭或盗用，可前往官方账号进行举报申诉，参赛者因剽窃他人作品而产生法律纠纷，将由参赛者承担法律责任，与主办以及承办单位无关；
+                    </li>
+                    <li><em>7.</em>本次活动的所有获奖作品将默认《天涯明月刀》手游官方有使用其作品的权利，包括但不限于宣传活动作品等非商业和商业使用途径，作品
+                        经由官方平台宣传并非视为获奖，奖励评选将以最终获奖名单为准。同时未经主办方同意，作者不得将参赛作品自行用于商业用途或授权于任何第三方使用，否则将取消评奖资格；
+                    </li>
+                    <li><em>8.</em>本次活动的参赛者不得出现数据造假、恶意刷票等情况，一经官方核实，将取消参赛资格；</li>
+                    <li><em>9.</em>如参赛者因个人原因未能在规定时间15天内在活动页面(2025年6月15日23:59:59前)领取奖品或填写相关获奖信息，则视为主动放弃奖励。<a
+                            href="rule.html" class="link_rule sp db">详细规则</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 我要投稿 -->
+        <div class="con con2">
+            <div class="tg_box1"></div>
+            <!-- 如何投稿 -->
+            <div class="tg_box2">
+                <!-- 添加gray为灰态 -->
+                <a href="javascript:;" class="btn_sq sp btn_djsq">点击授权个人微博主页</a>
+                <div class="big_btn">
+                    <a href="javascript:;" class="sp btn_red fcbtn_t1">点我投稿</a>
+                    <a href="javascript:;" class="sp btns_green btn_tz3">我的作品</a>
+                </div>
+            </div>
+            <!-- 稿件要求 -->
+            <div class="tg_box3">
+                <p class="gjyq_txt gjyq_txt1">
+                    ·如少侠想投稿<span>未同步至少侠所绑定的个人微博主页的创作内容</span>，少侠点击【点我投稿】时，需要少侠<span>复制超话作品链接</span>，并在【微博创作专区】活动页面内按照指引，<span>粘贴链接进行投稿</span>。
+                </p>
+                <p class="gjyq_txt gjyq_txt2">
+                    ·如少侠想投稿<span>已同步至微博主页的作品</span>，少侠成功绑定个人微博主页后，可先在微博天涯明月刀手游超话带三大活动话题自主投稿，后<span>点击【点我投稿】按钮自动读取所需作品（投稿页面仅读取最新5条作品）</span>并选择投稿，<span>如页面中未显示所需作品，少侠可通过【链接投稿】提交作品链接的方式进行投稿</span>。
+                </p>
+                <p class="gjyq_txt gjyq_txt3">
+                    ·少侠需要在【投稿期】内带<span>#天刀手游新赛季启明#+#江湖归处是桃源#+#桃源天刀联动#</span>三大活动话题投稿上传天刀手游相关原创<span>图文作品</span>或<span>视频作品</span>，<span>纯文字作品将会直接判定为不合格</span>；<br/>
+                    ·为确保活动排名公平公正，<span>活动期间以及活动结束后少侠请勿擅自去除投稿作品的活动话题或删除作品</span>。
+                </p>
+            </div>
+            <!-- 作品参考 -->
+            <div class="tg_box4">
+                <!-- 图文作品 -->
+                <div class="tg_lb tg_lb1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb1.png"
+                                                           alt=""/></div>
+                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb2.png"
+                                                           alt=""/></div>
+                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb3.png"
+                                                           alt=""/></div>
+                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb4.png"
+                                                           alt=""/></div>
+                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb5.png"
+                                                           alt=""/></div>
+                            <div class="swiper-slide"><img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/lb6.png"
+                                                           alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                    <div class="prev sp"></div>
+                    <div class="next sp"></div>
+                </div>
+                <!-- 视频作品 -->
+                <div class="tg_lb tg_lb2">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="javascript:popVideo('x3083xnk6u5');"><img
+                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid1.png" alt=""/><em
+                                    class="btn_play sp"></em></a></div>
+                            <div class="swiper-slide"><a href="javascript:popVideo('b3217pqpdiu');"><img
+                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid2.png" alt=""/><em
+                                    class="btn_play sp"></em></a></div>
+                            <div class="swiper-slide"><a href="javascript:popVideo('t3087r70wah');"><img
+                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid3.png" alt=""/><em
+                                    class="btn_play sp"></em></a></div>
+                            <!--<div class="swiper-slide"><a href="javascript:;"><img
+                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid4.png" alt=""/><em
+                                    class="btn_play sp"></em></a></div>-->
+                            <div class="swiper-slide"><a href="javascript:popVideo('p35447qhvpb');"><img
+                                    src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/vid5.png" alt=""/><em
+                                    class="btn_play sp"></em></a></div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                    <div class="prev sp"></div>
+                    <div class="next sp"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 活动公示 -->
+        <div class="con con3">
+            <!-- 种田糕手奖 -->
+            <div class="gs_box1 part5_wrap part5">
+                <p class="gjyq_txt">
+                    在本次征集活动中，刀妹收到了颇多创意满分、制作精良的作品，由衷感谢各位少侠的投稿和参与，综合作品人气、质量、官方评选等，现将获奖名单公示如下：</p>
+                <div class="big_btn">
+                    <a href="javascript:;" class="sp btn_red btn_lq4 gray">领取道具奖励</a>
+                    <a href="javascript:;" class="sp btns_green btn_lq3">提交Q币账号</a>
+                </div>
+
+                <div class="top_tit sp">Top1</div>
+                <ul class="top_list">
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                </ul>
+
+                <div class="top_tit sp video_fine1">Top2-3</div>
+                <ul class="top_list video_fine1">
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                </ul>
+
+                <div class="top_tit sp video_fine2">Top4-10</div>
+                <ul class="top_list top_list2 video_fine2">
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                    <li class="video_item1">
+                        <div class="zp_img iframe1">
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="zz_name txt9">作者名称</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 爱心排行奖 -->
+            <div class="gs_box2 part6_wrap part6">
+                <div class="big_btn">
+                    <a href="javascript:;" class="sp btn_red btn_lq4 gray">领取道具奖励</a>
+                    <a href="javascript:;" class="sp btns_green btn_lq3">提交Q币账号</a>
+                </div>
+                <div class="overflow_y">
+                    <div class="top_tit sp">Top1-3</div>
+                    <ul class="top_list top_list2">
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                    </ul>
+    
+                    <div class="top_tit sp video_box1">Top4-10</div>
+                    <ul class="top_list top_list2 video_box1">
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                    </ul>
+    
+                    <div class="top_tit sp video_box2">Top11-20</div>
+                    <ul class="top_list video_box2">
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                    </ul>
+    
+                    <div class="top_tit sp video_box3">Top21-30</div>
+                    <ul class="top_list video_box3">
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                        <li class="video_item">
+                            <div class="zp_img iframe">
+                                <a href="javascript:;" class="btn_plays sp"></a>
+                            </div>
+                            <p class="zz_name txt4">作者名称</p>
+                            <p class="xaz_txt txt5"></p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 奖励中心 -->
+        <div class="con con4">
+            <div class="task_box">
+                <ul class="task_list">
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">织心裁意头像框&头顶图标*1</p>
+                            <p class="task_txt2">成功投稿稿件≥1条</p>
+                        </div>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_task_btns btn_lq sp gray">领取</a>
+                    </li>
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">人气作品奖C档</p>
+                            <p class="task_txt2">5≤喜爱值≤29</p>
+                        </div>
+                        <p class="task_num"><em class="count">0</em>/3</p>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
+                    </li>
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">人气作品奖B档</p>
+                            <p class="task_txt2">30≤喜爱值≤99</p>
+                        </div>
+                        <p class="task_num"><em class="count">0</em>/3</p>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
+                    </li>
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">人气作品奖A档</p>
+                            <p class="task_txt2">100≤喜爱值≤499</p>
+                        </div>
+                        <p class="task_num"><em class="count">0</em>/3</p>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
+                    </li>
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">人气作品奖S档</p>
+                            <p class="task_txt2">喜爱值≥500</p>
+                        </div>
+                        <p class="task_num"><em class="count">0</em>/3</p>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_gears_btns btn_lq sp gray">领取</a>
+                    </li>
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">投票助力奖</p>
+                            <p class="task_txt2">成功投票≥15次</p>
+                        </div>
+                        <p class="task_num">投票次数<em class="user_vote_count">0</em>/15</p>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_vote_btns btn_lq sp gray">领取</a>
+                    </li>
+                    <li>
+                        <div class="task_info">
+                            <p class="task_txt1">投票助力奖</p>
+                            <p class="task_txt2">成功投票≥30次</p>
+                        </div>
+                        <p class="task_num">投票次数<em class="user_vote_count">0</em>/30</p>
+                        <!-- 添加gray为灰态 -->
+                        <a href="javascript:;" class="contribute_vote_btns btn_lq sp gray">领取</a>
+                    </li>
+                </ul>
+                <div class="jl_btn">
+                    <a href="javascript:TGDialogS('pop_ljjl');" id="getReceiveRecord" class="btn_lqjl sp db">领取记录</a>
+                    <a href="javascript:;" class="btn_txxx sp db btn_lq3">填写信息</a>
+                </div>
+            </div>
+        </div>
+        <!-- 我要投票 -->
+        <div class="con con5">
+            <div class="tp_box">
+                <ul class="tp_tips">
+                    <li>
+                        <em>1.</em>每位少侠在活动<span>【投票期】</span>内（2025年5月19日-2025年5月25日）<span>每天有5次投票机会</span>，单日不可重复投给同一作品；
+                    </li>
+                    <li><em>2.</em>少侠<span>请先登录并绑定游戏角色和微博账号</span>才可进行活动投票，为应援作品投出【喜爱值】；
+                    </li>
+                    <li>
+                        <em>3.</em><span>少侠投票次数满15次后可领取前往【奖励中心】领取【焕彩之砂*5】，满30票可领取【焕彩之砂*15】</span>，快给你喜爱的作品投出宝贵的一票吧~
+                    </li>
+                </ul>
+                <ul class="sort_list tab_select">
+                    <li class="tab cur" is_latest="true" is_hot="false">
+                        <em></em>
+                        <span>最新</span>
+                    </li>
+                    <li class="tab" is_latest="false" is_hot="true">
+                        <em></em>
+                        <span>最热</span>
+                    </li>
+                </ul>
+                <div class="search_box search_sec">
+                    <span>搜索作品：</span>
+                    <input type="text" value=""/>
+                    <a href="javascript:;" class="btn_lq sp btn_query">查询</a>
+                </div>
+                <ul class="zp_list vote_list">
+                    
+                </ul>
+            </div>
+            <div class="page_box vote_pager">
+                <!-- <a href="javascript:;" class="prevs sp"></a> -->
+                <div class="page_num pager_item">
+                    <span>1</span>
+                </div>
+                <!-- <a href="javascript:;" class="nexts sp"></a> -->
+            </div>
+        </div>
+    </div>
+    <!-- 底部按钮 -->
+    <div class="bottom_btn">
+        <a href="javascript:;" class="btn_wb db">微博赛道</a>
+        <a href="javascript:;" onclick="location.href='indexbz.html'" class="btn_bz db">B站赛道</a>
+    </div>
+</div>
+
+<!-- 视频弹窗 -->
+<div class="pop_box pop_box2" id="pop_vid" style="display:none;">
+    <div id="video_container" class="video"></div>
+    <a href="javascript:closeVideo();" class="pop_close sp pa" title="关闭"></a>
+</div>
+
+
+<!-- 绑定角色弹窗 -->
+<div class="pop_box" id="pop_bind" style="display:none;">
+    <div class="pop_content pop1">
+        <div>
+            <p class="pop_tips">亲爱的少侠，<span>请确认是否以此游戏角色参与本次活动，一经点击【确认】后将无法更改</span>，请悉知
+            </p>
+            <div id="roleSelector">
+                <ul class="bd_input">
+                    <li>
+                        <div class="sel_cn" id="area">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sel_cn" id="plat">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sel_cn" id="partition">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sel_cn" id="role">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp fcbtn_qr1">确认</a>
+                <a href="javascript:closeDialog();" class="pbtn2 sp">取消</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 投稿作品弹窗 -->
+<div class="pop_box" id="pop_tg" style="display:none;">
+    <div class="pop_content pop3">
+        <div>
+            <div class="pop_tit">
+                <i></i><span>投稿作品</span><i></i>
+            </div>
+            <div class="works">
+                <p class="pop_tips">勾选以下想要投递的作品</p>
+                <ul class="tg_list">
+                    <!-- cur为选中 -->
+                    <li>
+                        <div class="tg_img">
+                            <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/zp_img.jpg" alt=""/>
+                            <a href="javascript:;" class="btn_plays sp"></a>
+                        </div>
+                        <p class="tg_name">作品:</p>
+                        <em class="cur_icon sp"></em>
+                    </li>
+                    <li>
+                        <div class="tg_img">
+                            <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/zp_img.jpg" alt=""/>
+                        </div>
+                        <p class="tg_name">作品:</p>
+                        <em class="cur_icon sp"></em>
+                    </li>
+                </ul>
+                <p class="pop_tips">本页仅拉取少侠所绑定微博主页的稿件（<span>最新五条</span>），如未显示或未发布至个人主页，请使用下方<span>【链接投稿】</span>。
+                </p>
+            </div>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp fcbtn_qr2">确认投稿</a>
+                <a href="javascript:TGDialogS('pop_ljtg');" class="pbtn2 sp">链接投稿</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 我的作品弹窗 -->
+<div class="pop_box" id="pop_wdzp" style="display:none;">
+    <div class="pop_content pop2">
+        <div>
+            <div class="pop_tit">
+                <i></i><span>我的作品</span><i></i>
+            </div>
+            <ul class="wdzp_list works">
+                <li>
+                    <div class="wdzp_top">
+                        <div class="tg_img">
+                            <img src="//game.gtimg.cn/images/ty/cp/a20250414tdwb/zp_img.jpg" alt=""/>
+                        </div>
+                        <div class="tg_name">
+                            <p>作品编号:</p>
+                            <p>投稿时间：X月X日</p>
+                            <p>喜爱值：</p>
+                        </div>
+                    </div>
+                    <div class="wdzp_bottom">
+                        <p class="sh_state state1">审核中</p>
+                        <a href="javascript:;" class="btn_wdzp fxlp sp">分享拉票</a>
+                        <a href="javascript:;" class="btn_wdzp delet sp">删除</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp fcbtn_t1">继续投稿</a>
+                <a href="javascript:closeDialog();" class="pbtn2 sp">取消</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 链接投稿弹窗 -->
+<div class="pop_box" id="pop_ljtg" style="display:none;">
+    <div class="pop_content pop5">
+        <div>
+            <div class="pop_tit">
+                <i></i><span>链接投稿</span><i></i>
+            </div>
+            <p class="pop_tips">请粘贴微博作品链接：</p>
+            <input type="text" value="" placeholder="请输入微博作品链接" class="ljtg_input"/>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp fcbtn_qr3">确认投稿</a>
+                <a href="javascript:;" class="pbtn2 sp">取消</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 信息填写弹窗 -->
+<div class="pop_box" id="pop_txxx" style="display:none;">
+    <div class="pop_content pop6">
+        <div>
+            <div class="pop_tit">
+                <i></i><span>信息填写</span><i></i>
+            </div>
+            <p class="pop_tips">
+                恭喜少侠在本次创作活动中获得Q币奖励，<span>请15日内（2025年6月15日23:59:59前）</span>在下方提交您想要领取Q币奖励的Q币账号，<span>确认提交后将无法进行更改</span>，请少侠确认信息无误后再点击提交哦~
+            </p>
+            <div class="tx_input">
+                <span>QQ账号：</span>
+                <input id="text12_input" type="text" value="" placeholder="请输入QQ账号" class="ljtg_input"/>
+            </div>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp fcbtn_qr1">确认提交</a>
+                <a href="javascript:closeDialog();" class="pbtn2 sp">取消</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 分享拉票弹窗 -->
+<div class="pop_box" id="pop_fxlp" style="display:none;">
+    <div class="pop_content pop6">
+        <div>
+            <div class="pop_tit">
+                <i></i><span>分享拉票赢喜爱值</span><i></i>
+            </div>
+            <!-- 如需可编辑 删除readonly属性即可 -->
+            <textarea class="fx_textarea"
+                      readonly="readonly">嗨我的盆友，我正在参加【天涯明月刀手游赛季版-江湖归处是桃源微博创作征集计划活动】，我的作品编号是：66666你一票我一票，助力少侠我今天就成为江湖种田糕手，赢月灵石和Q币大奖吧！</textarea>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认分享</a>
+                <a href="javascript:;" class="pbtn2 sp">取消</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 领奖记录弹窗 -->
+<div class="pop_box" id="pop_ljjl" style="display:none;">
+    <div class="pop_content pop3">
+        <div>
+            <div class="pop_tit">
+                <i></i><span>领奖记录</span><i></i>
+            </div>
+            <a href="javascript:;" class="btn_txxx sp db btn_lq3">填写信息</a>
+            <div class="lj_box">
+                <div class="lj_tips" style="display:none;">暂无记录</div>
+                <ul class="lj_list fc_box6">
+                    
+                </ul>
+            </div>
+            <!-- <div class="page_box">
+                <a href="javascript:;" class="prevs sp"></a>
+                <div class="page_num">
+                    <span>1</span>
+                </div>
+                <a href="javascript:;" class="nexts sp"></a>
+            </div> -->
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+
+<!-- 提示弹窗S -->
+<div class="pop_box" id="pop_ts1" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">请少侠绑定游戏角色</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts2" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">少侠暂无可领取的奖励哦，请先完成活动任务哦~</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts3" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">少侠暂无领奖记录哦，快去完成活动任务领取奖励吧~</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts4" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">没有找到您在江湖的信息，请先前往游戏创建角色</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts5" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">即将跳转微博首页分享</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts6" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">即将跳转微博首页，确认账号授权</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts7" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">微博链接错误，请少侠重新输入~</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts8" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">少侠还未绑定微博账号，请先前往授权绑定微博账号</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts9" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">授权失败，一个微博账号只能给一个游戏账号授权</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts10" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">非常抱歉，此时不在该活动开放时间段！</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts11" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">已过了领奖时间，无法继续领奖</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts12" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">非常抱歉，此时不在该活动【投稿期】时间段！</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts13" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">信息确认提交后将无法更改，请确认无误后再进行提交！</p>
+            <div class="pop_btn">
+                <a href="javascript:;" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<div class="pop_box" id="pop_ts14" style="display:none;">
+    <div class="pop_content pop4">
+        <div>
+            <p class="pop_tips">今日投票次数已达上限，请少侠明天再来吧！</p>
+            <div class="pop_btn">
+                <a href="javascript:closeDialog();" class="pbtn1 sp">确认</a>
+            </div>
+        </div>
+        <a href="javascript:closeDialog();" class="pop_close sp pa" title="关闭"></a>
+    </div>
+</div>
+<!-- 提示弹窗E -->
+
+<!-- swiper -->
+<script src="//game.gtimg.cn/images/js/jquery/jquery-1.12.4.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.modules.min.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script src="//game.gtimg.cn/images/js/milo-next/latest/milo.js"></script>
+
+<!-- <script src="js/swiper-bundle.min.js"></script> -->
+<script src="js/plug250210.js"></script>
+<!-- <script src="js/plug241224.js"></script> -->
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/javascript">
+    // 点击排序切换
+    $(".sort_list li").on("click", function () {
+        $(this).addClass("cur").siblings().removeClass("cur");
+    })
+
+    // 点击勾选
+    // $(".tg_list li").on("click", function () {
+    //     $(this).toggleClass("cur");
+    // })
+
+    // 显示某tab
+    showTab(0)
+
+    function showTab(n) {
+        $(".tab_list a").eq(n).addClass("cur").siblings().removeClass("cur");
+        $(".con").eq(n).show().siblings().hide();
+    }
+
+    //图片轮播
+    var swiper1 = new Swiper('.tg_lb1 .swiper-container', {
+        loop: true,
+        autoplay: 2500,
+        pagination: '.tg_lb1 .pagination',
+        nextButton: '.tg_lb1 .next',
+        prevButton: '.tg_lb1 .prev',
+        observer: true,
+        observeParents: true
+    });
+
+    //视频轮播
+    var swiper2 = new Swiper('.tg_lb2 .swiper-container', {
+        loop: true,
+        autoplay: 2500,
+        pagination: '.tg_lb2 .pagination',
+        nextButton: '.tg_lb2 .next',
+        prevButton: '.tg_lb2 .prev',
+        observer: true,
+        observeParents: true
+    });
+
+    //ios端解决点击select页面上移的问题
+    var stops;
+    $('select,input').on('focus', function () {
+        stops = $(window).scrollTop();
+    })
+    $('select,input').on('blur', function () {
+        $(window).scrollTop(stops);
+    })
+
+    //弹窗
+    var mo = function (e) {
+        e.preventDefault();
+    };
+
+    function stop() {
+        document.body.style.overflow = 'hidden';
+        document.addEventListener("touchmove", mo, {passive: false});//禁止页面滑动
+    }
+
+    function move() {
+        document.body.style.overflow = '';//出现滚动条
+        document.removeEventListener("touchmove", mo, {passive: false});
+    }
+
+    
+
+    // 视频
+    var player;
+
+    function popVideo(vid) {
+        if (!vid) {
+            // alert("敬请期待111111！")
+        } else {
+            TGDialogS('pop_vid')
+            player = new Txplayer({
+                containerId: 'video_container',
+                vid: vid,
+                width: '100%',
+                height: '100%',
+                autoplay: true
+            });
+        }
+    }
+
+    function closeVideo() {
+        player.pause();
+        closeDialog();
+        $("#video_container").html("")
+    }
+
+    // 点击播放视频
+//  $(".btn_play,.btn_plays").on("click", function () {
+//      popVideo("")
+//  })
+</script>
+</body>
+
+</html>
